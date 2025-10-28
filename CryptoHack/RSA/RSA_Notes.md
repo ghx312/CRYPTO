@@ -55,7 +55,7 @@ $a^{p - 2} \equiv a^{-1} \pmod{p}$
 
 $a^{p} \equiv a \pmod{p}$
 
-In $F_{p} \equiv {0,1,2....p - 1}$, $ \forall g\ \in F_{p}, \exists d\ s.t g \cdot d \equiv 1 \pmod{p}$
+In $F_{p} \equiv {0,1,2....p - 1}$, $∀g∈F_{p}, ∃d s.t g \cdot d \equiv 1 \pmod{p}$
 
 
 
