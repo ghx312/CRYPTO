@@ -79,7 +79,7 @@ It is only true when p is prime
 
 $\frac{a}{p} \equiv a^(\frac{p-1}{2})$
 
-$\frac{a}{p} \equiv 1 \pmod{p}$ a is a Quadratic Residue where $a \notequiv 0 \pmod{p}$
+$\frac{a}{p} \equiv 1 \pmod{p}$ a is a Quadratic Residue where $a ≢  0 \pmod{p}$
 
 $\frac{a}{p} \equiv -1 \pmod{p}$ a is a Quadratic Non-Residue $\pmod{p}$
 
