@@ -63,15 +63,15 @@ d is known as the multiplicative inverse of g
 
 ### __Quadratic Residue__
 
-If $∃a∈F_{p} for a^{2} \equiv y \pmod{p}$ such that $0 < y < p$
+If $∃a∈F_{p}$ for $a^{2} \equiv y \pmod{p}$ such that $0 < y < p$
 
 y is a Quadratic Residue; otherwise, y is a Quadratic Non-Residue.
 
-$Quadratic Residue \cdot Quadratic Residue \equiv Quadratic Residue$
+$Quadratic Residue \cdot Quadratic Residue = Quadratic Residue$
 
-$Quadratic Residue \cdot Quadratic Non-Residue \equiv Quadratic Non-Residue$
+$Quadratic Residue \cdot Quadratic Non-Residue = Quadratic Non-Residue$
 
-$Quadratic Non-Residue \cdot Quadratic Non-Residue \equiv Quadratic Residue$
+$Quadratic Non-Residue \cdot Quadratic Non-Residue = Quadratic Residue$
 
 ### __Legendre Symbol__
 
