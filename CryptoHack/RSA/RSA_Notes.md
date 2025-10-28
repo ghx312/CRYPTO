@@ -51,11 +51,15 @@ Given a and p where p is prime and a < p
 
 $a^{p - 1} \equiv 1 \pmod{p}$
 
-$a^{p - 2} \equiv a^{-1} \pmod{p}$
+$a^{p - 2} \equiv a^{-1} \pmod{p}$ --> Used for finding multiplicative inverse
 
-$a^{p} \equiv a \pmod{p}$
+$a^{p} \equiv a \pmod{p}$ 
 
-In $F_{p} \equiv {0,1,2....p - 1}$, $∀g∈F_{p}, ∃d s.t g \cdot d \equiv 1 \pmod{p}$
+In $F_{p} \equiv {0,1,2....p - 1}$ 
+
+$∀g∈F_{p}, ∃d$ such that $g \cdot d \equiv 1 \pmod{p}$
+
+d is known as the multiplicative inverse of g
 
 
 
