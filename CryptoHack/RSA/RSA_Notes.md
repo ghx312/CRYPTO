@@ -85,6 +85,8 @@ $\frac{a}{p} \equiv -1 \pmod{p}$ a is a Quadratic Non-Residue $\pmod{p}$
 
 $\frac{a}{p} \equiv 0 \pmod{p}, a \equiv 0 \pmod{p}$
 
+### __Tonelli-Shanks Algorithm__
+
 
 
 
