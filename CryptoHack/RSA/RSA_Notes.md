@@ -47,7 +47,7 @@ You can rearrange the equations such that the remainder is isolated, then by usi
 
 ### __Fermat's Little Theorem__
 
-Given a and p where p is prime and a < p
+Given a and p, where p is prime and a < p
 
 $a^{p - 1} \equiv 1 \pmod{p}$
 
@@ -67,13 +67,24 @@ If $∃a∈F_{p}$ for $a^{2} \equiv y \pmod{p}$ such that $0 < y < p$
 
 y is a Quadratic Residue; otherwise, y is a Quadratic Non-Residue.
 
-$Quadratic Residue \cdot Quadratic Residue = Quadratic Residue$
+Quadratic Residue * Quadratic Residue = Quadratic Residue
 
-$Quadratic Residue \cdot Quadratic Non-Residue = Quadratic Non-Residue$
+Quadratic Residue * Quadratic Non-Residue = Quadratic Non-Residue
 
-$Quadratic Non-Residue \cdot Quadratic Non-Residue = Quadratic Residue$
+Quadratic Non-Residue * Quadratic Non-Residue = Quadratic Residue
 
 ### __Legendre Symbol__
+
+It is only true when p is prime
+
+$\frac{a}{p} \equiv a^(\frac{p-1}{2})$
+
+$\frac{a}{p} \equiv 1 \pmod{p}$ a is a Quadratic Residue where $a \notequiv 0 \pmod{p}$
+
+$\frac{a}{p} \equiv -1 \pmod{p}$ a is a Quadratic Non-Residue $\pmod{p}$
+
+$\frac{a}{p} \equiv 0 \pmod{p}, a \equiv 0 \pmod{p}$
+
 
 
 
