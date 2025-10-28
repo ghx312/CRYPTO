@@ -40,5 +40,15 @@ The previous non-zero remainder is GCD(a, b)
 
 ### __Euclid's Algorithm Extended Ver.__
 
+Euclid's Extended Algorithm says that there is an integer u and v such that:
+
+$a \cdot u + b \cdot v = GCD(a, b)$
+
+In order to carry out the extended version, you will need to first find the GCD(a, b) in the original version, using the equation where the remainder is the GCD(a, b)
+You can rearrange the equations such that the remainder is isolated, then by using and rearranging the previous equations, you can substitute the rearranged equations and find integers u and v for a and b that fulfil the above equation.
+
+
+
+
 
 
