@@ -35,7 +35,7 @@ $b = kc{1} + c_{2}$, where $c_{2} < c_{1}$
 
 $c_{n} = c_{n + 1} + 0$
 
-The previous non-zero remainder is GCD(a, b)
+The previous non-zero remainder is GCD(a, b)  
 
 
 ### __Euclid's Algorithm Extended Ver.__
