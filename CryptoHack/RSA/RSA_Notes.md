@@ -99,7 +99,7 @@ Find the following variables:
 
 $c = z^{q} \pmod{p}$
 
-$r = a^{\frac{p + 1}{2} \pmod{p}$
+$r = a^{\frac{p + 1}{2}} \pmod{p}$
 
 $t = a^{q} \pmod{p}$
 
@@ -123,11 +123,11 @@ When t = 1, r is the square root $a \pmod{p}$
 
 When s = 1, the algorithm condenses to:
 
-$x \equiv a^{\frac{p - 1}{4}$
+$x \equiv a^{\frac{p - 1}{4}}$
 
 ### __Chinese Remainder Theorem__
 
-This algorithm can only be used when all linear modulus are coprime
+This algorithm can only be used when all linear moduli are coprime
 
 Initial Setup:
 
