@@ -55,7 +55,7 @@ Where all the elements in $F_{p}$ can be written as $g^{n} \pmod{p}$ for some in
 
 Finding Generators:
 
-$\varphi(n) = p - 1 = \prod ({q_i})^{k_n}$
+$\varphi(n) = p - 1 = \prod {q_i}^{k_n}$
 
 $g^(\frac{\varphi(n)}{q_{i}}) \pmod{n}$
 
