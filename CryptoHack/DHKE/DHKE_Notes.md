@@ -8,7 +8,7 @@ Euler's Totient Function: $\varphi(N) = (p - 1)(q - 1)$
 
 Modular Multiplicative Inverse: $d \equiv e^{-1} \pmod{\varphi(N)}$
 
-Decryption: $m = c^{e} \pmod{N}$, $N = p \cdot q$
+Decryption: $m = c^{d} \pmod{N}$, $N = p \cdot q$
 
 ### __RSA Signing__
 
