@@ -151,4 +151,4 @@ Time Complexity: $O(\sqrt{p})$
 
 Space Complexity: $O(\sqrt{1})$
 
-Works efficiently for $p < 2^60 ~ 2^80$, or about 18 to 24 digits.
+Works efficiently for $p < 2^{60} ~ 2^{80}$, or about 18 to 24 digits.
