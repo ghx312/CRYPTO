@@ -20,8 +20,8 @@ $a \cdot d \pmod{n} \equiv b \cdot d \pmod{n} --> a \equiv b \pmod{\frac{n}{GCD(
 When $GCD(a, b) \equiv 1$, a and b are coprime (Relatively Prime)
 
 
-### __Eucild's Algorithm__
-Eucild's Algorithm is used to find the GCD between 2 positive integers
+### __Euclid's Algorithm__
+Euclid's Algorithm is used to find the GCD between 2 positive integers
 
 Given a and b:
 
