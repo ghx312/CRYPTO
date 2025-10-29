@@ -99,7 +99,7 @@ This imported function helps to solve small discrete logs
 This is usable for primes $< 2^{64}$ or about 20 digits
 
 
-### __Baby-Step-Giant-Step
+### __Baby-Step-Giant-Step__
 
 p is prime
 
