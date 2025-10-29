@@ -157,11 +157,11 @@ If x is congruent to each corresponding part, then $d_{n} = 1$
 
 ### __Euler's Totient Function__
 
-$\varphi{p} = Number of x in F_{p} where GCD(p ,x) = 1$
+$\varphi(p) = Number of x in F_{p} where GCD(p ,x) = 1$
 
-$b^{\varphi{m}} \equiv 1 \pmod{m}$, where $GCD(b, m) = 1$
+$b^{\varphi(m)} \equiv 1 \pmod{m}$, where $GCD(b, m) = 1$
 
-$\varphi{pq} = (p - 1)(q - 1)
+$\varphi(pq) = (p - 1)(q - 1)
 
 ### __Binomial Expansion__
 
@@ -177,11 +177,11 @@ $N = p \cdot q$
 
 Choose a Public exponent e such that:
 
-$1 < e < \varphi{N}, GCD[e, \varphi{N}] = 1$
+$1 < e < \varphi{N}, GCD[e, \varphi(N)] = 1$
 
 Calculate Private exponent, d:
 
-$d \cdot d \equiv 1 \pmod{\varphi{N}}$
+$d \cdot d \equiv 1 \pmod{\varphi(N)}$
 
 RSA's G.E.D:
 
