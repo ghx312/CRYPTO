@@ -8,7 +8,7 @@ Euler's Totient Function: $\varphi(N) = (p - 1)(q - 1)$
 
 Modular Multiplicative Inverse: $d \equiv e^{-1} \pmod{\varphi(N)}$
 
-Decryption: $m = c^{e$} \pmod{N}$, $N = p \cdot q$
+Decryption: $m = c^{e} \pmod{N}$, $N = p \cdot q$
 
 ### __RSA Signing__
 
@@ -16,7 +16,7 @@ Sender:
 
 $c = m^{e_{0}} \pmod{N}$, encrypt the messagin using the your friend's public key
 
-$H(m)$ is a function to calculate the Hash of the original message; each hash is unique for every message. We will use this to ensure that the receiver is able to knows if the message has been tampered with.
+$H(m)$ is a function to calculate the Hash of the original message; each hash is unique for every message. We will use this to ensure that the receiver knows if the message has been tampered with.
 
 $S = H(m)^{d_{1}} \pmod{N}$, encrypt the hash of the original message with your private key
 
