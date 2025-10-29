@@ -80,13 +80,13 @@ Quadratic Non-Residue * Quadratic Non-Residue = Quadratic Residue
 
 It is only true when p is prime
 
-$\frac{a}{p} \equiv a^(\frac{p-1}{2})$
+$(\frac{a}{p}) \equiv a^(\frac{p-1}{2})$
 
-$\frac{a}{p} \equiv 1 \pmod{p}$ a is a Quadratic Residue where $a ≢  0 \pmod{p}$
+$(\frac{a}{p}) \equiv 1 \pmod{p}$ a is a Quadratic Residue where $a ≢  0 \pmod{p}$
 
-$\frac{a}{p} \equiv -1 \pmod{p}$ a is a Quadratic Non-Residue $\pmod{p}$
+$(\frac{a}{p}) \equiv -1 \pmod{p}$ a is a Quadratic Non-Residue $\pmod{p}$
 
-$\frac{a}{p} \equiv 0 \pmod{p}, a \equiv 0 \pmod{p}$
+$(\frac{a}{p}) \equiv 0 \pmod{p}, a \equiv 0 \pmod{p}$
 
 
 ### __Tonelli-Shanks Algorithm__
