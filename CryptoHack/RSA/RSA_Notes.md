@@ -167,11 +167,13 @@ $b^{\varphi(m)} \equiv 1 \pmod{m}$, where $GCD(b, m) = 1$
 
 $\varphi(pq) = (p - 1)(q - 1)$
 
+
 ### __Binomial Expansion__
 
 Given $N = p \cdot q$ and $(p + q)^{e} \pmod{N}$
 
 $(p + q)^{e} \equiv p^{e} + q^{e} \pmod{N}$
+
 
 ### __RSA Explained__
 
@@ -185,7 +187,7 @@ $1 < e < \varphi(N), GCD[e, \varphi(N)] = 1$
 
 Calculate Private exponent, d:
 
-$d \cdot d \equiv 1 \pmod{\varphi(N)}$
+$e \cdot d \equiv 1 \pmod{\varphi(N)}$
 
 ### __RSA's G.E.D__
 
@@ -196,6 +198,7 @@ E: C <-- $C \equiv M^{E} \pmod{N}, 0 <= M < N$
 D: M <-- $M \equiv C^{d} \pmod{N}$
 
 To solve RSA, we need to find $\varphi(N)$ which can be derived from p and q as $\varphi(N) = (p - 1)(q - 1)$
+
 
 ### __Quadratic Equations__
 
