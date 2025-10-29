@@ -49,7 +49,7 @@ This key exchange works on the fact that for every element in $F_{p}$ where p is
 
 ### __Generators__
 
-Generators, $g$, are elements in $F_{p}$ such that there is a subgroup $H = {g, g^{2},...,g^{p - 1}$
+Generators, $g$, are elements in $F_{p}$ such that there is a subgroup $H = {g, g^{2},...,g^{p - 1}}$
 
 Where all the elements in $F_{p}$ can be written as $g^{n} \pmod{p}$ for some integer $n < p$
 
