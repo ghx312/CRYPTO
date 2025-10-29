@@ -121,7 +121,7 @@ Giant Steps:
 
 Calculate the giant step multiplier: $g^{-m} \cdot g^{m} \equiv 1 \pmod{p}$
 
-Compute $A \cdot (g^{-m})^{x_1}, where $x_1 ∈ {0, 1, 2,..., m - 1}$
+Compute $A \cdot (g^{-m})^{x_1}$, where $x_1 ∈ {0, 1, 2,..., m - 1}$
 
 When $A \cdot (g^{-m})^{x_1} \equiv_{p} g^{x_2}$, $x = x_1 + x_2$
 
