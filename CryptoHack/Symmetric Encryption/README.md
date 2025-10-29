@@ -50,4 +50,4 @@ Key Management: Like all symmetric ciphers, secure key distribution is crucial a
 
 Complexity: The mathematical operations (especially MixColumns and key expansion) can be complex to implement.
 
-Side-Channel Attacks: Vulnerable if physical implementations leak information (e.g., timing attacks).
+Side-Channel Attacks: Vulnerable if physical implementations leak information (e.g. Timing attacks).
