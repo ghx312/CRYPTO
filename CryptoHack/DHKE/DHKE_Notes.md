@@ -57,7 +57,7 @@ Finding Generators:
 
 $\varphi(n) = p - 1 = \prod {q_i}^{k_n}$
 
-$g^(\frac{\varphi(n)}{q_{i}}) \pmod{n}$
+$g^\frac{\varphi(n)}{q_{i}} \pmod{n}$
 
 In simple terms, separate the totient of p into its prime factors, then check using the second algorithm below, if none of the answers are 1, $g$ is a generator of $\pmod{p}$
 
