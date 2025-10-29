@@ -189,7 +189,7 @@ $d \cdot d \equiv 1 \pmod{\varphi(N)}$
 
 ### __RSA's G.E.D__
 
-G: e, d <-- $1 < e < \varphi(N), GCD[e, \varphi(N)] = 1, d \cdot e \equiv \pmod{\varphi(N)}$
+G: e, d <-- $1 < e < \varphi(N), GCD[e, \varphi(N)] = 1, d \cdot e \equiv 1 \pmod{\varphi(N)}$
 
 E: C <-- $C \equiv M^{E} \pmod{N}, 0 <= M < N$
 
@@ -197,8 +197,49 @@ D: M <-- $M \equiv C^{d} \pmod{N}$
 
 To solve RSA, we need to find $\varphi(N)$ which can be derived from p and q as $\varphi(N) = (p - 1)(q - 1)$
 
+### __Quadratic Equations__
 
+$\varphi(N) = (p - 1)(q - 1) = pq - (p + q) - 1 = N - (p + q) + 1$
 
+Hence, $p + q = N - \varphi(N) + 1$
+
+Let us consider the quadratic equation where p and q are its roots:
+
+$(x - p)(x - q) = 0$
+
+We get the following equation:
+
+$x^{2} - (p + q)x + pq = 0$
+
+$x^{2} - (N - \varphi(N) + 1)x + N = 0$
+
+If the value of $\varphi(N)$ is correct, the results of the final equation would be a whole number, giving us the factors of N.
+
+### __Simple Continued Fraction/Wiener's Attack__
+
+$\varphi(N) = (p - 1)(q - 1) = N - (p + q) + 1$ which can be estimated as N as $p + q$'s value is very small when compared to $p \cdot q$
+
+Since we know that $∃k>0, k∈ℤ$ for $e \cdot d = k \cdot \varphi(N) + 1, hence
+
+$\frac{e}{\varphi(N)} - \frac{k}{d} = \frac{1}{d \cdot \varphi(N)}$ since the value of $d \cdot \varphi(N)$ is large, the value of $\frac{1}{d \cdot \varphi(N)}$ can be estimated as 0
+
+This allows us to estimate $\frac{e}{N} = \frac{k}{d}$
+
+We know that $e \cdot d \equiv 1 \pmod(\varphi(N))$, $\varphi(N) \equiv 0 \pmod(0)$ and $d \equiv 1 \pmod(\varphi(N))$. 
+
+We will skip the verification process for all values of d that are even
+
+Since $\varphi(N)$ is a whole number, if $\frac{e \cdot d - 1}{k}$ is not a whole number, we will also skip that value
+
+We can use Euclid's Algorithm to find cases for which all of these are true. We will then use Quadratic Equations to verify that $\varphi(N)$ has integer solutions
+
+Wiener's Attack will be successful if:
+
+$q < p < 2q$ and $d <= \frac{1}{3} \sqrt[4]{N}$
+
+May be successful if:
+
+$d > \frac{1}{3} \sqrt[4]{N}$
 
 
 
