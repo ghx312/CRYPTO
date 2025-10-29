@@ -8,13 +8,11 @@ AES operates on 128-bit blocks arranged in a 4x4 matrix of bytes called the stat
 
 Supported key lengths: 128-bit (10 rounds), 192-bit (12 rounds), 256-bit (14 rounds).
 
-Step 1
-
-Key Expansion:
+### __Key Expansion__
 
 The original key is expanded into multiple round keys using a key schedule algorithm.
 
-Initial Round:
+## __Initial Round__
 
 AddRoundKey: XOR the plaintext state with the first round key.
 
@@ -32,7 +30,7 @@ Final Round (same as above but without MixColumns):
 
 SubBytes → ShiftRows → AddRoundKey.
 
-Pros of AES:
+### __Pros of AES__
 
 Strong Security: Resistant to known attacks like linear and differential cryptanalysis.
 
@@ -44,7 +42,7 @@ Standardisation: Globally recognised and widely used encryption standard.
 
 Parallelizable: Several AES operations can be parallelised to enhance performance.
 
-Cons of AES:
+### __Cons of AES__
 
 Block Size Limitation: A fixed block size of 128 bits can be limiting in some contexts.
 
