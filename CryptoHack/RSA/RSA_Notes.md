@@ -228,7 +228,7 @@ $\frac{e}{\varphi(N)} - \frac{k}{d} = \frac{1}{d \cdot \varphi(N)}$ since the va
 
 This allows us to estimate $\frac{e}{N} = \frac{k}{d}$
 
-We know that $e \cdot d \equiv 1 \pmod(\varphi(N))$, $\varphi(N) \equiv 0 \pmod(0)$ and $d \equiv 1 \pmod(\varphi(N))$. 
+We know that $e \cdot d \equiv 1 \pmod(\varphi(N))$, $\varphi(N) \equiv 0 \pmod{0}$ and $d \equiv 1 \pmod(\varphi(N))$. 
 
 We will skip the verification process for all values of d that are even
 
