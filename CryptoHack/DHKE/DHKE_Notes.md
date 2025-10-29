@@ -139,11 +139,11 @@ The algorithm uses the equation, $x_i = g^{a_i} \cdot A^{b_i}$
 
 There is a pseudorandom algorithm that generates values a and b such that 
 
-$a_i, b_i, =/ a_j, b_j$ and $g^{a_j} \cdot g^{b_j} = x_j = x_i = g^{a_i} \cdot g^{b_i}$
+$a_i, b_i, \neq a_j, b_j$ and $g^{a_j} \cdot g^{b_j} = x_j = x_i = g^{a_i} \cdot g^{b_i}$
 
 Using this equation, $a_i + b_i \cdot x = a_j + b_j \cdot x$, we can solve for x
 
-$x \neq \frac{a_j - a_i}{b_j - b_i}$
+$x = \frac{a_j - a_i}{b_j - b_i}$
 
 Efficiency:
 
