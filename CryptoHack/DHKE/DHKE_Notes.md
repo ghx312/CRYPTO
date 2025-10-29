@@ -44,7 +44,7 @@ When they both receive the new information, they will apply their private expone
 
 $SK = g^{ab} \pmod{p}$
 
-This key exchange works on the fact that for every element in $F_{p}$ where p is prime, for all non-zero elements, there exists an $x$ where $x \cdot x^{-1} \equiv \pmod{p}$. This allows us to easily calculate inverses when doing modulo math.
+This key exchange works on the fact that for every element in $F_{p}$ where p is prime, for all non-zero elements, there exists an $x$ where $x \cdot x^{-1} \equiv 1 \pmod{p}$. This allows us to easily calculate inverses when doing modulo math.
 
 
 ### __Generators__
