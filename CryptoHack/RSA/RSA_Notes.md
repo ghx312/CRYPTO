@@ -170,7 +170,7 @@ $\varphi(pq) = (p - 1)(q - 1)$
 
 ### __Binomial Expansion__
 
-Given $N = p \cdot q$ and $(p + q)^{e} \pmod{N}$
+Given $N = p \cdot q$, p and q are prime, and $(p + q)^{e} \pmod{N}$
 
 $(p + q)^{e} \equiv p^{e} + q^{e} \pmod{N}$
 
