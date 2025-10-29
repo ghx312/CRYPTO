@@ -151,11 +151,11 @@ Multiply $b \cdot c$ by an integer $d_{1}$ such that $x \equiv b \cdot c \cdot d
 
 If $x ≢  a \cdot c \pmod{b}$
 
-Multiply $a \cdot c$ by an integer $d_{2}$ such that $x \equiv a \cdot c \cdot d_{2} \pmod{a}$
+Multiply $a \cdot c$ by an integer $d_{2}$ such that $x \equiv a \cdot c \cdot d_{2} \pmod{b}$
 
 If $x ≢  b \cdot a \pmod{c}$
 
-Multiply $b \cdot a$ by an integer $d_{3}$ such that $x \equiv b \cdot a \cdot d_{3} \pmod{a}$
+Multiply $b \cdot a$ by an integer $d_{3}$ such that $x \equiv b \cdot a \cdot d_{3} \pmod{c}$
 
 If x is congruent to each corresponding part, then $d_{n} = 1$
 
