@@ -78,7 +78,7 @@ $M = g^{m} \pmod{p}$ and send g, p and M to Bob
 
 Bob will then send you B, where $B = g^{b} \pmod{p}$ where, b is Bob’s secret exponent
 
-You will now need to send M to Alice, Alice will think that M is B, but it’s actually not.
+You will now need to send M to Alice. Alice will think that M is B, but it’s actually not.
 
 You now have a secret key between you and Alice, $SK_{Alice} = A^{m} \pmod{p} = g^{am} \pmod{p}$
 
@@ -107,7 +107,7 @@ Algorithm:
 
 $A = g^{x} \pmod{p} = g^{x_1 \cdot + x_2}$
 
-$m = Ceiling(\sqrt[2]{p})$ (Round up to nearest Integer)
+$m = Ceiling(\sqrt{p})$ (Round up to nearest Integer)
 
 $A \cdot g^{-x_2} = (g^{m})^{x_1}$
 
@@ -115,7 +115,7 @@ $x = x_1 + x_2$
 
 Baby Steps:
 
-Make a table containing the values of $g^{x_2}$ where $x_{2}∈{0, 1, 2, 3,..., m - 1}$
+Make a table containing the values of $g^{x_2}$ where $x_{2}∈${$0, 1, 2, 3,..., m - 1$}
 
 Giant Steps:
 
