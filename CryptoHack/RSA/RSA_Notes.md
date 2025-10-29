@@ -45,6 +45,7 @@ $a \cdot u + b \cdot v = GCD(a, b)$
 To carry out the extended version, you will need to first find the GCD(a, b) in the original version, using the equation where the remainder is the GCD(a, b)
 You can rearrange the equations such that the remainder is isolated, then by using and rearranging the previous equations, you can substitute the rearranged equations and find integers u and v for a and b that fulfil the above equation.
 
+
 ### __Fermat's Little Theorem__
 
 Given a and p, where p is prime and a < p
@@ -61,6 +62,7 @@ $∀g∈F_{p}, ∃d$ such that $g \cdot d \equiv 1 \pmod{p}$
 
 d is known as the multiplicative inverse of g
 
+
 ### __Quadratic Residue__
 
 If $∃a∈F_{p}$ for $a^{2} \equiv y \pmod{p}$ such that $0 < y < p$
@@ -73,6 +75,7 @@ Quadratic Residue * Quadratic Non-Residue = Quadratic Non-Residue
 
 Quadratic Non-Residue * Quadratic Non-Residue = Quadratic Residue
 
+
 ### __Legendre Symbol__
 
 It is only true when p is prime
@@ -84,6 +87,7 @@ $\frac{a}{p} \equiv 1 \pmod{p}$ a is a Quadratic Residue where $a ≢  0 \pmod{p
 $\frac{a}{p} \equiv -1 \pmod{p}$ a is a Quadratic Non-Residue $\pmod{p}$
 
 $\frac{a}{p} \equiv 0 \pmod{p}, a \equiv 0 \pmod{p}$
+
 
 ### __Tonelli-Shanks Algorithm__
 
@@ -119,11 +123,11 @@ $c = b^{2} \pmod{p}$
 
 $m = i$
 
-When t = 1, r is the square root $a \pmod{p}$
+When t = 1, r is the square root of $a \pmod{p}$
 
 When s = 1, the algorithm condenses to:
 
-$x \equiv a^{\frac{p - 1}{4}}$
+$x \equiv a^{\frac{p - 1}{4}} \pmod{p}$
 
 ### __Chinese Remainder Theorem__
 
@@ -157,7 +161,7 @@ If x is congruent to each corresponding part, then $d_{n} = 1$
 
 ### __Euler's Totient Function__
 
-$\varphi(p) = Number of x in F_{p} where GCD(p ,x) = 1$
+$\varphi(p) =$ Number of x in $F_{p}$ where $GCD(p ,x) = 1$
 
 $b^{\varphi(m)} \equiv 1 \pmod{m}$, where $GCD(b, m) = 1$
 
@@ -185,7 +189,14 @@ $d \cdot d \equiv 1 \pmod{\varphi(N)}$
 
 ### __RSA's G.E.D__
 
-$G:$
+G: e, d <-- $1 < e < \varphi(N), GCD[e, \varphi(N)] = 1, d \cdot e \equiv \pmod{\varphi(N)}$
+
+E: C <-- $C \equiv M^{E} \pmod{N}, 0 <= M < N$
+
+D: M <-- $M \equiv C^{d} \pmod{N}$
+
+To solve RSA, we need to find $\varphi(N)$ which can be derived from p and q as $\varphi(N) = (p - 1)(q - 1)$
+
 
 
 
