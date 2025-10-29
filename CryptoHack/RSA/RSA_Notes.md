@@ -161,7 +161,7 @@ $\varphi(p) = Number of x in F_{p} where GCD(p ,x) = 1$
 
 $b^{\varphi(m)} \equiv 1 \pmod{m}$, where $GCD(b, m) = 1$
 
-$\varphi(pq) = (p - 1)(q - 1)
+$\varphi(pq) = (p - 1)(q - 1)$
 
 ### __Binomial Expansion__
 
@@ -171,19 +171,19 @@ $(p + q)^{e} \equiv p^{e} + q^{e} \pmod{N}$
 
 ### __RSA Explained__
 
-Choose 2 large primes p and q that are about the same in length
+Choose 2 large primes p and q that are about the same length
 
 $N = p \cdot q$
 
 Choose a Public exponent e such that:
 
-$1 < e < \varphi{N}, GCD[e, \varphi(N)] = 1$
+$1 < e < \varphi(N), GCD[e, \varphi(N)] = 1$
 
 Calculate Private exponent, d:
 
 $d \cdot d \equiv 1 \pmod{\varphi(N)}$
 
-RSA's G.E.D:
+### __RSA's G.E.D__
 
 $G:$
 
