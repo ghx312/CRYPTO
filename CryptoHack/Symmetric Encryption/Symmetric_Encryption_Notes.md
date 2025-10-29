@@ -64,7 +64,7 @@ ECB takes a key and another block cipher, encrypting every single block of the p
 
 ECB Advantages
 
-Paralleization: The Encryption and Decryption processes for all keys are efficient
+Parallelisation: The Encryption and Decryption processes for all keys are efficient
 
 Partial Perfect Secrecy: Perfect Secrecy can be achieved partially when pseudorandom keys are only used once for short messages
 
