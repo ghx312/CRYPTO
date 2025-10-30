@@ -6,7 +6,7 @@ $y^{2} = x^{3} + ax + b$
 
 However, in ECC, we treat valid curves as a set of points on a graph, we can define this as shown.
 
-$E(F_{p}) = {(x, y): x, y ∈ {F_{p}$ satisfying $y^{2} = x^{3} + ax +b$} $∪ O$
+$E(F_{p}) = {(x, y): x, y ∈ F_{p}$ satisfying $y^{2} = x^{3} + ax +b ∪ O$
 
 This simply means that the "Elliptic Curve" that we are looking at contains points that have coordinates such that they are within the set $F_{p}$ that still satisfies the equation of the "curve" $y^{2} = x^{3} + ax + b$ + O at the point at infinity or the additive inverse.
 
