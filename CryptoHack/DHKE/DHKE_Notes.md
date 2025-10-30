@@ -113,11 +113,11 @@ $A \cdot g^{-x_2} = (g^{m})^{x_1}$
 
 $x = x_1 + x_2$
 
-Baby Steps:
+__Baby Steps:__
 
 Make a table containing the values of $g^{x_2}$ where $x_{2}∈${$0, 1, 2, 3,..., m - 1$}
 
-Giant Steps:
+__Giant Steps:__
 
 Calculate the giant step multiplier: $g^{-m} \cdot g^{m} \equiv 1 \pmod{p}$
 
