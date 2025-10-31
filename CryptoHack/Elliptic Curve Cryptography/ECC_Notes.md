@@ -48,5 +48,30 @@ $P(x, y) = Q(x, p - y)$ -> $P + Q = O$
 
 ![Screenshot](./images/Point_Addition.png)
 
-When we add 2 Points of a curve together $P + Q$ , we draw a line through Point 
+When we add 2 Points of a curve together $P + Q$ , we draw a line through Points P and Q intersecting the curve again at Point R. We then take the new point R prime such that it has the same coordinates as point R, however it has the coordinates $R(x, -y)$, where Point R prime is point R flipped along the x axis. We can say that $P + Q = R$ prime.
+
+If the 2 points are the same, $P + P$, we take the tangenet of the point, if the tangent intersects the curve again, we will do the same thing as with 2 different points. Call that point R and fliping it along the x axis. 
+
+If the line does not intersect with the curve again, we say that it intersects with point O, which is a point located at the end of every line.
+
+### __Point Addition Formula__
+
+Let there be $P(x_1, y_1)$ and $Q(x_2, y_2)$ and we want to calculate $P + Q$
+
+$-> If P = O, P + Q = Q$
+
+$-> If Q = O, P + Q + P$
+
+$If x_1 = x_2, y_1 = -y_2, P + Q = O$
+
+$If P \neq Q: \lambda = \frac{y_2 - y_1}{x_2 - x_1}$
+
+$If P = Q: \lambda = \frac{{3y^{2}}_{1} + a}{2y_1}$
+
+$x_3 = \lambda^2 - x_1 - x_2$
+
+$y_3 = \lambda(x_1 - x_3) - y_1$
+
+return $(x_3, y_3)$
+
 
