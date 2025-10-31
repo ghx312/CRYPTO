@@ -74,4 +74,10 @@ $y_3 = \lambda(x_1 - x_3) - y_1$
 
 return $(x_3, y_3)$
 
+### __Scalar Multiplication__
+
+Scalar Multiplication is the repeated addition of the same point n times; this is also the trapdoor function used for ECC. We are to find $n$ given $Q = [n]P$
+
+Input: $P()$
+
 
