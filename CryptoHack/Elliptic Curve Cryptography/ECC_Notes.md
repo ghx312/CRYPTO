@@ -48,3 +48,5 @@ $P(x, y) = Q(x, p - y)$ -> $P + Q = O$
 
 ![Screenshot](./images/Point_Addition.png)
 
+When we add 2 Points of a curve together $P + Q$ , we draw a line through Point 
+
