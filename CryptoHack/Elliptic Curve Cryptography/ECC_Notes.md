@@ -46,4 +46,5 @@ $P(x, y) = Q(x, p - y)$ -> $P + Q = O$
 
 ### __Point Addition__
 
+![Screenshot](../images/PointAddition.png)
 
