@@ -222,7 +222,7 @@ If the value of $\varphi(N)$ is correct, the results of the final equation would
 
 $\varphi(N) = (p - 1)(q - 1) = N - (p + q) + 1$ which can be estimated as N as $p + q$'s value is very small when compared to $p \cdot q$
 
-Since we know that $∃k>0, k∈ℤ$ for $e \cdot d = k \cdot \varphi(N) + 1, hence
+Since we know that $∃k>0, k∈ℤ$ for $e \cdot d = k \cdot \varphi(N) + 1$, hence
 
 $\frac{e}{\varphi(N)} - \frac{k}{d} = \frac{1}{d \cdot \varphi(N)}$ since the value of $d \cdot \varphi(N)$ is large, the value of $\frac{1}{d \cdot \varphi(N)}$ can be estimated as 0
 
