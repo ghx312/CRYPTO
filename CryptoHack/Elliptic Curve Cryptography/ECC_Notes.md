@@ -60,7 +60,7 @@ Let there be $P(x_1, y_1)$ and $Q(x_2, y_2)$ and we want to calculate $P + Q$
 
 $-> If P = O, P + Q = Q$
 
-$-> If Q = O, P + Q + P$
+$-> If Q = O, P + Q = P$
 
 $If x_1 = x_2, y_1 = -y_2, P + Q = O$
 
