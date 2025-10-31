@@ -139,13 +139,13 @@ Output: $[k]P ∈ E(F_p)$
 
 $R_0, R_1 = P, [2]P$
 
-for i in range($n - 2$):
+$for i in range($n - 2$):$
 
-  if $k_i = 0$:
+  $if k_i = 0:$
   
     $R_0, R_1 = [2]R_0, R_0 + R_1$
     
-  else:
+  $else:$
   
     $R_0, R_1 = R_0 + R_1, [2]R_0$
     
