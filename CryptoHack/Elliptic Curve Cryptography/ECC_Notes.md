@@ -2,7 +2,7 @@
 
 Elliptic Curves are defined by an equation, also known as the Weierstrass Equations
 
-$y^{2} = x^{3} + ax + b$
+$E: y^{2} = x^{3} + ax + b$
 
 However, in ECC, we treat valid curves as a set of points on a graph, we can define this as shown.
 
@@ -16,6 +16,7 @@ The hardness of ECC comes from its reduction, where,
 
 Given points $Q, P$ find $n$ such that $Q = [n]P$
 
+
 __Identity Element__
 
 The identity element of an elliptic curve is the point O, where
@@ -23,6 +24,7 @@ The identity element of an elliptic curve is the point O, where
 $P + O = P$
 
 $P + (-P) = O$
+
 
 __Point Addition Properties__
 
@@ -34,6 +36,7 @@ $(P + Q) + R = P + (Q + R)$ (Associative)
 
 $P + Q = Q + P$ (Commutative)
 
+
 __Limitations__
 
 All elliptic curves in ECC must fulfil this equation $4a^{3} + 27b^{2} \neq 0$, this equation shows that the elliptic curve does not have a singularity point, meaning that there are no repeated roots for this equation, for reapeated roots can compromise the security of the ECC.
@@ -43,6 +46,7 @@ All elliptic curves in ECC must fulfil this equation $4a^{3} + 27b^{2} \neq 0$, 
 Point Negation is about calculating the inverse of a specific point on an ECC valid curve. To negate a point, we require its x and y coordinates and the modulus of the equation. We can do so using this equation:
 
 $P(x, y) = Q(x, p - y)$ -> $P + Q = O$
+
 
 ### __Point Addition__
 
@@ -74,10 +78,98 @@ $y_3 = \lambda(x_1 - x_3) - y_1$
 
 return $(x_3, y_3)$
 
+
 ### __Scalar Multiplication__
 
 Scalar Multiplication is the repeated addition of the same point n times; this is also the trapdoor function used for ECC. We are to find $n$ given $Q = [n]P$
 
-Input: $P()$
+Input: $P ∈ E(F_p), n > 0$
 
+Output: $Q = [n]P ∈ E(F_p)$
+
+Let $-> Q = P, R = O$
+
+$-> While n > 0$
+
+If $n \equiv 1 \pmod{2}$ (n is odd) $-> R += Q$
+
+Let $Q = [2]Q, n = [n/2]$
+
+return $R = [n]P$
+
+
+### __ECDLP__
+
+Given $Q, P$, find $n$ from $Q = [n]P$
+
+This is a hard search problem, meaning that it has no known algorithm to find a solution in polynomial time. This makes ECDLP the cornerstone of ECC, ensuring that ECC stays safe.
+
+
+### __ECDHKE__
+
+The Elliptic Curve Diffie-Hellman Key Exchange is an algorithm that allows 2 individuals, Alice and Bob, to exchange secret keys through the use of Elliptic Curve Cryptography without having to meet up.
+
+Alice and Bob first agree on an $E$ curve, a prime modulo $p$ and a generator $G$, which generates a subgroup $H$ with order $q$, meaning that $G$ can generate $q$ points. Both Alice and Bob choose a private integer $n_A$ and $n_B$, respectively.
+
+Alice Calculates: $Q_A = [n_A]G$
+
+Bob Calculates: $Q_B = [n_B]G$
+
+They both send each other their calculated values, where Alice and Bob $Q_A$ and Bob sends Alice $Q_B$
+
+Alice Calculates: $[n_A]Q_B = SK$
+
+Bob Calculates: $[n_B]Q_A = SK$
+
+They both have a shared secret key due to the commutative properties of elliptic curve scalar multiplication and point addition.
+
+$S = [n_a]Q_B = [n_b]Q_A$
+
+If given only 1 coordinate, you can work backwards using the equation of elliptic curves. Usually, only the x coordinate will be sent, you can then use the above method to find y. 
+Then you check both values of y mod p, the y with a parity bit (Odd) is the correct y, put it into scalar multiple and solve for shared x. The x value of S will usually be the shared key.
+
+
+### __Montgomery’s Ladder__
+
+Montgomery’s Ladder, also known as Montgomery’s Binary Algorithm, is a secure method of calculating scalar multiples in elliptic curve cryptography. It protects the scalar calculation process from timing attacks, where the attacker gains useful information from knowing how long a certain operation takes to calculate. 
+
+Input: $P ∈ E(F_p), k = \sum 2^{i} \cdot k_i, k_{n - 1} = 1$
+
+Output: $[k]P ∈ E(F_p)$
+
+$R_0, R_1 = P, [2]P$
+
+for i in range($n - 2$):
+  if $k_i = 0$:
+    $R_0, R_1 = [2]R_0, R_0 + R_1$
+  else:
+    $R_0, R_1 = R_0 + R_1, [2]R_0$
+return $R_0$
+
+This algorithm ensures that each time the coordinate is multiplied, it takes the same time by adding to itself and vice versa. This prevents timing attacks as addition is much faster than multiplication.
+
+
+### __Pohlig-Hellman Algorithm__
+
+We want to find $n$ in:
+
+$Q = [n]G, [n]G ∈ {[0]G, [1]G, [2]G, [3]G,..., [q - 1]G}, |G| = q$
+
+This equation basically says that there are q number of valid generators $G$ and one of those values in the set $[n]G$ also means that $0 <= n < q$
+
+Since this equation is hard to brute-force and too time-consuming, we can split this group up into smaller parts with a smaller set of calculations.
+
+We do this by factoring $q$.
+
+$q = {p_1}^{e_1} \cdot {p_2}^{e_2} \cdot {p_3}^{e_3} .... {p_i}^{e_i}$
+
+$G_i = \frac{q}{{p_i}^{e_i}}G$
+
+$Q_i = \frac{q}{{p_i}^{e_i}}Q$
+
+$n_i = n \pmod{{p_i}^{e_i}}$
+
+We are then able to solve for n via brute force for an efficient algorithm, as the set of possible solutions has shrunk for each group.
+
+$Q_i = n_i \cdot G_i, n_i \cdot G_i ∈ {[0]G_i, [1]G_i, [2]G_i, [3]G_i,...,[{p_i}^{e_i}]G}$
 
