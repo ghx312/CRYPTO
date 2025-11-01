@@ -174,3 +174,10 @@ We are then able to solve for n via brute force for an efficient algorithm, as t
 
 $Q_i = n_i \cdot G_i, n_i \cdot G_i ∈ {[0]G_i, [1]G_i, [2]G_i, [3]G_i,...,[{p_i}^{e_i}]G}$
 
+We can then find the discrete logarithm for all of these smaller subgroups and combine them using the Chinese Remainder Theorem
+
+In simple terms, this algorithm splits up a hard problem, or a problem with many solutions and turns it into multiple simple problems with very little solutions for each problem. 
+
+Its like having a 10-digit lock with over $10^{10}$ possible combinations, using this algorithm to split this lock into 10 1-digit locks with 10 combinations each, greatly reducing the complexity and combining the lock at the end using the Chinese Remainder Theorem to get the full lock. You solve part of n for each small modulo p.
+
+This is only applicable if q is factorable, or if q is a smooth number
