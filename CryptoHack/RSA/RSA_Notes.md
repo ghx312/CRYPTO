@@ -12,7 +12,7 @@ $a + b \pmod{n} \equiv a \pmod{n} + b \pmod{n}$
 
 $ab \pmod{n} \equiv a \pmod{n} \cdot b \pmod{n}$
 
-$a \cdot d \pmod{n} \equiv b \cdot d \pmod{n} --> a \equiv b \pmod{\frac{n}{GCD(d, n)}}$
+$a \cdot d \equiv b \cdot d \pmod{n} --> a \equiv b \pmod{\frac{n}{GCD(d, n)}}$
 
 
 ### __Greatest Common Divisor__
@@ -52,7 +52,7 @@ Given a and p, where p is prime and a < p
 
 $a^{p - 1} \equiv 1 \pmod{p}$
 
-$a^{p - 2} \equiv a^{-1} \pmod{p}$ --> Used for finding multiplicative inverse
+$a^{p - 2} \equiv a^{-1} \pmod{p}$ --> Used for finding multiplicative inverse, only when a and p are coprime
 
 $a^{p} \equiv a \pmod{p}$ 
 
@@ -97,7 +97,7 @@ Algorithm:
 
 $p - 1 = q \cdot 2^{s}$ 
 
-Find a z such that $\frac{z}{p} = -1$
+Find a z such that $(\frac{z}{p}) = -1$
 
 Find the following variables:
 
@@ -127,7 +127,7 @@ When t = 1, r is the square root of $a \pmod{p}$
 
 When s = 1, the algorithm condenses to:
 
-$x \equiv a^{\frac{p - 1}{4}} \pmod{p}$
+$x \equiv a^{\frac{p + 1}{4}} \pmod{p}$
 
 ### __Chinese Remainder Theorem__
 
