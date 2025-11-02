@@ -221,7 +221,7 @@ Since we know that $∃k>0, k∈ℤ$ for $e \cdot d = k \cdot \varphi(N) + 1$, h
 
 $\frac{e}{\varphi(N)} - \frac{k}{d} = \frac{1}{d \cdot \varphi(N)}$ since the value of $d \cdot \varphi(N)$ is large, the value of $\frac{1}{d \cdot \varphi(N)}$ can be estimated as 0
 
-This allows us to estimate $\frac{e}{N} = \frac{k}{d}$
+This allows us to estimate $\frac{e}{\varphi(N)} = \frac{k}{d}$
 
 We know that $e \cdot d \equiv 1 \pmod{\varphi(N)}$, $\varphi(N) \equiv 0 \pmod{0}$ and $d \equiv 1 \pmod{\varphi(N)}$. 
 
