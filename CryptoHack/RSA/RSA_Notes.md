@@ -167,7 +167,7 @@ $\varphi(pq) = (p - 1)(q - 1)$
 
 Given $N = p \cdot q$, p and q are prime, and $(p + q)^{e} \pmod{N}$
 
-$(p + q)^{e} \pmod{n} \equiv \sum_{e C k}^{e} p^{e} \cdot q^{e - k} \pmod{n}$
+$(p + q)^{e} \pmod{n} \equiv \sum_{k = 0}^{e} eCk \cdot p^{e} \cdot q^{e - k} \pmod{n}$
 
 
 ### __RSA Explained__
