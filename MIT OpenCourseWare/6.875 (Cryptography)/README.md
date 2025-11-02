@@ -1,4 +1,5 @@
-Notes for 6.875 (Cryptography) Course from MIT OpenCourseWare
+Notes from MIT OpenCourseWare
 
+We will always be $\epsilon(x)$ s.t
 
 $\epsilon(x) < \frac{1}{p(k)}$
