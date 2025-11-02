@@ -135,29 +135,24 @@ This algorithm can only be used when all linear moduli are coprime
 
 Initial Setup:
 
-$x \equiv y_{1} \pmod{a}$
+$x \equiv y_{1} \pmod{z_1}$
 
-$x \equiv y_{2} \pmod{b}$
+$x \equiv y_{2} \pmod{z_2}$
 
-$x \equiv y_{3} \pmod{c}$
+$x \equiv y_{3} \pmod{z_3}$
 
-If $GCD(a, b, c) = 1$
+...
 
-$x \equiv b \cdot c \cdot d_{1} + a \cdot c \cdot d_{1} + b \cdot a \cdot d_{1} \pmod{a \cdot b \cdot c}$
+$x \equiv y_{i} \pmod{z_i}$
 
-If $x ≢  b \cdot c \pmod{a}$
+If $GCD(z_1, z_2, z_3,..., z_i) = 1, N = \prod[i][j]{z_j}$
 
-Multiply $b \cdot c$ by an integer $d_{1}$ such that $x \equiv b \cdot c \cdot d_{1} \pmod{a}$
+Set $N_i = \frac{N}{z_i}$, let $d_i$ be the modulo inverse of $N_i \pmod{n_i}$ 
 
-If $x ≢  a \cdot c \pmod{b}$
+$x \equiv \sum[i][j = 1] y_j \cdot z_j \cdot d_j \pmod{N}$
 
-Multiply $a \cdot c$ by an integer $d_{2}$ such that $x \equiv a \cdot c \cdot d_{2} \pmod{b}$
+s.t $N_i \cdot d_i \equiv 1 \pmod{n_i}$
 
-If $x ≢  b \cdot a \pmod{c}$
-
-Multiply $b \cdot a$ by an integer $d_{3}$ such that $x \equiv b \cdot a \cdot d_{3} \pmod{c}$
-
-If x is congruent to each corresponding part, then $d_{n} = 1$
 
 ### __Euler's Totient Function__
 
@@ -172,7 +167,7 @@ $\varphi(pq) = (p - 1)(q - 1)$
 
 Given $N = p \cdot q$, p and q are prime, and $(p + q)^{e} \pmod{N}$
 
-$(p + q)^{e} \equiv p^{e} + q^{e} \pmod{N}$
+$(p + q)^{e} \pmod{n} \equiv \sum[e][eCk]{p^{e} \cdot q^{e - k}} \pmod{n}$
 
 
 ### __RSA Explained__
