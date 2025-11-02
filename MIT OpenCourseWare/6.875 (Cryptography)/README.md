@@ -1,5 +1,4 @@
 Notes from MIT OpenCourseWare
 
-Everything $< \frac{1}{p(k)}$
+Life $< \frac{1}{p(k)}$
 
-You $> \frac{1}{p(k)}$
