@@ -1,5 +1,5 @@
 Notes from MIT OpenCourseWare
 
-We will always be $\epsilon(x)$ s.t
+Everything may be %< \frac{1}{p(k)}%
 
-$\epsilon(x) < \frac{1}{p(k)}$
+But you will always be $\epsilon> \frac{1}{p(k)}$
