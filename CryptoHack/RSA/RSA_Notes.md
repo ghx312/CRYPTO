@@ -143,13 +143,13 @@ $x \equiv y_{3} \pmod{z_3}$
 
 ...
 
-$x \equiv y_{i} \pmod{z_i}$
+$x \equiv y_{i} \pmod{z_j}$
 
-If $GCD(z_1, z_2, z_3,..., z_i) = 1, N = \prod[i][j]{z_j}$
+If $GCD(z_1, z_2, z_3,..., z_j) = 1, N = \prod_{i = 1}^{j} z_i$
 
-Set $N_i = \frac{N}{z_i}$, let $d_i$ be the modulo inverse of $N_i \pmod{n_i}$ 
+Set $N_i = \frac{N}{n_i}$, let $d_i$ be the modulo inverse of $N_i \pmod{n_i}$ 
 
-$x \equiv \sum[i][j = 1] y_j \cdot z_j \cdot d_j \pmod{N}$
+$x \equiv \sum_{i = 1}^{j} y_i \cdot N_i \cdot d_i \pmod{N}$
 
 s.t $N_i \cdot d_i \equiv 1 \pmod{n_i}$
 
@@ -167,7 +167,7 @@ $\varphi(pq) = (p - 1)(q - 1)$
 
 Given $N = p \cdot q$, p and q are prime, and $(p + q)^{e} \pmod{N}$
 
-$(p + q)^{e} \pmod{n} \equiv \sum[e][eCk]{p^{e} \cdot q^{e - k}} \pmod{n}$
+$(p + q)^{e} \pmod{n} \equiv \sum_{e C k}^{e} p^{e} \cdot q^{e - k} \pmod{n}$
 
 
 ### __RSA Explained__
