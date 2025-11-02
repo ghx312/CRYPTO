@@ -12,7 +12,7 @@ $a + b \pmod{n} \equiv a \pmod{n} + b \pmod{n}$
 
 $ab \pmod{n} \equiv a \pmod{n} \cdot b \pmod{n}$
 
-$a \cdot d \equiv b \cdot d \pmod{n} --> a \equiv b \pmod{\frac{n}{GCD(d, n)}}$
+$a \cdot d \equiv b \cdot d \pmod{n} -> a \equiv b \pmod{\frac{n}{GCD(d, n)}}$
 
 
 ### __Greatest Common Divisor__
