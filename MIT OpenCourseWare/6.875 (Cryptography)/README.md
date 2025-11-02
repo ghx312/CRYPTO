@@ -1,4 +1,4 @@
 Notes from MIT OpenCourseWare
 
-Life $< \frac{1}{p(k)}$
+You will always be $> \frac{1}{p(k)}$
 
