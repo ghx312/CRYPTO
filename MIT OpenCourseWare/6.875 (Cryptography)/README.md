@@ -1,3 +1,5 @@
 Notes from MIT OpenCourseWare
 
-When you are around, everything is just $\epsilon(x) < \frac{1}{p(k)}$
+Everything is $< \frac{1}{p(k)}$
+
+But you are $> \frac{1}{p(k)}$
