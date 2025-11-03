@@ -88,6 +88,15 @@ $(\frac{a}{p}) \equiv -1 \pmod{p}$ a is a Quadratic Non-Residue $\pmod{p}$
 
 $(\frac{a}{p}) \equiv 0 \pmod{p}, a \equiv 0 \pmod{p}$
 
+$$
+(\frac{a}{p})\begin{cases}
+0, if p | a\\
+1, if a is a quadratic residue \pmod{p}
+-1, if a is a non-quadratic residue \pmod{p}
+\end{cases}
+$$
+
+
 
 ### __Tonelli-Shanks Algorithm__
 
