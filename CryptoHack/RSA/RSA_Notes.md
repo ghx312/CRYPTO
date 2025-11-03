@@ -90,9 +90,9 @@ $(\frac{a}{p}) \equiv 0 \pmod{p}, a \equiv 0 \pmod{p}$
 
 $$
 (\frac{a}{p})\begin{cases}
-0, \text{if p | a}\\
-1, \text{if a is a quadratic residue} \pmod{p} \\
--1, \text{if a is a non-quadratic residue} \pmod{p}
+0, \text{if } a \equiv 0 \pmod{p} \\
+1, \text{if a is a quadratic residue where } a ≢  0 \pmod{p} \\
+-1, \text{if a is a quadratic non-residue} \pmod{p}
 \end{cases}
 $$
 
