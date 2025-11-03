@@ -80,7 +80,7 @@ Quadratic Non-Residue * Quadratic Non-Residue = Quadratic Residue
 
 It is only true when p is prime
 
-$(\frac{a}{p}) \equiv a^(\frac{p-1}{2}) \pmod{p}$
+$(\frac{a}{p}) \equiv a^\frac{p-1}{2} \pmod{p}$
 
 $$ (\frac{a}{p})\begin{cases}
 0, \text{if } a \equiv 0 \pmod{p} \\
