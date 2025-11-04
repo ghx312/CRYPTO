@@ -31,7 +31,7 @@ $b = kc{1} + c_{2}$, where $c_{2} < c_{1}$
 
 ...
 
-$c_{n} = c_{n + 1} + 0$
+$c_{n - 1} = c_{n} \cdot k_{n} + 0$
 
 The previous non-zero remainder is GCD(a, b)  
 
@@ -80,7 +80,7 @@ Quadratic Non-Residue * Quadratic Non-Residue = Quadratic Residue
 
 It is only true when p is prime
 
-$(\frac{a}{p}) \equiv a^\frac{p-1}{2} \pmod{p}$
+$(\frac{a}{p}) \equiv a^\frac{(p - 1)}{2} \pmod{p}$
 
 $$ (\frac{a}{p})\begin{cases}
 0, \text{if } a \equiv 0 \pmod{p} \\
@@ -104,7 +104,7 @@ Find the following variables:
 
 $c = z^{q} \pmod{p}$
 
-$r = a^{\frac{p + 1}{2}} \pmod{p}$
+$r = a^{\frac{q + 1}{2}} \pmod{p}$
 
 $t = a^{q} \pmod{p}$
 
