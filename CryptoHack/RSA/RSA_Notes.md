@@ -19,13 +19,13 @@ $b = kc{1} + c_{2}$, where $c_{2} < c_{1}$
 $c_{n - 1} = c_{n} \cdot k_{n} + 0$  
 The previous non-zero remainder is GCD(a, b)  
 
-### __Euclid's Algorithm Extended Ver.__
+# __Euclid's Algorithm Extended Ver.__
 Euclid's Extended Algorithm says that there are integers u and v such that:  
 $a \cdot u + b \cdot v = GCD(a, b)$  
 To carry out the extended version, you will need to first find the GCD(a, b) in the original version, using the equation where the remainder is the GCD(a, b)  
 You can rearrange the equations such that the remainder is isolated, then by using and rearranging the previous equations, you can substitute the rearranged equations and find integers u and v for a and b that fulfil the above equation.  
 
-### __Fermat's Little Theorem__
+# __Fermat's Little Theorem__
 Given a and p, where p is prime and a < p  
 $a^{p - 1} \equiv 1 \pmod{p}$  
 $a^{p - 2} \equiv a^{-1} \pmod{p}$ --> Used for finding multiplicative inverse, only when a and p are coprime  
@@ -34,24 +34,23 @@ In $F_p = {0,1,2,...,p - 1}$
 $∀g∈F_{p}, ∃d$ such that $g \cdot d \equiv 1 \pmod{p}$  
 d is known as the multiplicative inverse of g  
 
-### __Quadratic Residue__
+# __Quadratic Residue__
 If $∃a∈F_{p}$ for $a^{2} \equiv y \pmod{p}$ such that $0 < y < p$  
 y is a Quadratic Residue; otherwise, y is a Quadratic Non-Residue.  
 Quadratic Residue * Quadratic Residue = Quadratic Residue  
 Quadratic Residue * Quadratic Non-Residue = Quadratic Non-Residue  
 Quadratic Non-Residue * Quadratic Non-Residue = Quadratic Residue  
 
-### __Legendre Symbol__
+# __Legendre Symbol__
 It is only true when p is prime  
 $(\frac{a}{p}) \equiv a^\frac{(p - 1)}{2} \pmod{p}$  
-
 $$ (\frac{a}{p})\begin{cases}
 0, \text{if } a \equiv 0 \pmod{p} \\
 1, \text{if a is a quadratic residue where } a ≢  0 \pmod{p} \\
 -1, \text{if a is a quadratic non-residue} \pmod{p}
 \end{cases} $$  
 
-### __Tonelli-Shanks Algorithm__
+# __Tonelli-Shanks Algorithm__
 This algorithm is used to find the square of the quadratic residue only when p is an odd prime and a is a quadratic residue, which can be verified using the Legendre Symbol  
 Algorithm:  
 $p - 1 = q \cdot 2^{s}$  
@@ -72,7 +71,7 @@ When t = 1, r is the square root of $a \pmod{p}$
 When s = 1, the algorithm condenses to:  
 $x \equiv a^{\frac{p + 1}{4}} \pmod{p}$  
 
-### __Chinese Remainder Theorem__
+# __Chinese Remainder Theorem__
 This algorithm can only be used when all linear moduli are coprime  
 Initial Setup:  
 $x \equiv y_{1} \pmod{z_1}$  
@@ -85,16 +84,16 @@ Set $N_i = \frac{N}{n_i}$, let $d_i$ be the modulo inverse of $N_i \pmod{n_i}$
 $x \equiv \sum_{i = 1}^{j} y_i \cdot N_i \cdot d_i \pmod{N}$  
 s.t $N_i \cdot d_i \equiv 1 \pmod{n_i}$  
 
-### __Euler's Totient Function__
+# __Euler's Totient Function__
 $\varphi(p) =$ Number of x in $F_{p}$ where $GCD(p ,x) = 1$  
 $b^{\varphi(m)} \equiv 1 \pmod{m}$, where $GCD(b, m) = 1$  
 $\varphi(pq) = (p - 1)(q - 1)$  
 
-### __Binomial Expansion__
+# __Binomial Expansion__
 Given $N = p \cdot q$, p and q are prime, and $(p + q)^{e} \pmod{N}$  
 $(p + q)^{e} \pmod{n} \equiv (\sum_{k = 0}^{e} eCk \cdot p^{e} \cdot q^{e - k}) \pmod{n}$  
 
-### __RSA Explained__
+# __RSA Explained__
 Choose 2 large primes p and q that are about the same length  
 $N = p \cdot q$  
 Choose a Public exponent e such that:  
@@ -102,13 +101,13 @@ $1 < e < \varphi(N), GCD[e, \varphi(N)] = 1$
 Calculate Private exponent, d:  
 $e \cdot d \equiv 1 \pmod{\varphi(N)}$  
 
-### __RSA's G.E.D__
+# __RSA's G.E.D__
 G: e, d <-- $1 < e < \varphi(N), GCD[e, \varphi(N)] = 1, d \cdot e \equiv 1 \pmod{\varphi(N)}$  
 E: C <-- $C \equiv M^{E} \pmod{N}, 0 <= M < N$  
 D: M <-- $M \equiv C^{d} \pmod{N}$  
 To solve RSA, we need to find $\varphi(N)$ which can be derived from p and q as $\varphi(N) = (p - 1)(q - 1)$  
 
-### __Quadratic Equations__
+# __Quadratic Equations__
 $\varphi(N) = (p - 1)(q - 1) = pq - (p + q) - 1 = N - (p + q) + 1$  
 Hence, $p + q = N - \varphi(N) + 1$  
 Let us consider the quadratic equation where p and q are its roots:  
@@ -118,7 +117,7 @@ $x^{2} - (p + q)x + pq = 0$
 $x^{2} - (N - \varphi(N) + 1)x + N = 0$  
 If the value of $\varphi(N)$ is correct, the results of the final equation would be a whole number, giving us the factors of N.  
 
-### __Simple Continued Fraction/Wiener's Attack__
+# __Simple Continued Fraction/Wiener's Attack__
 $\varphi(N) = (p - 1)(q - 1) = N - (p + q) + 1$ which can be estimated as N as $p + q$'s value is very small when compared to $p \cdot q$  
 Since we know that $∃k>0, k∈ℤ$ for $e \cdot d = k \cdot \varphi(N) + 1$, hence  
 $\frac{e}{\varphi(N)} - \frac{k}{d} = \frac{1}{d \cdot \varphi(N)}$ since the value of $d \cdot \varphi(N)$ is large, the value of $\frac{1}{d \cdot \varphi(N)}$ can be estimated as 0  
