@@ -30,7 +30,7 @@ Given a and p, where p is prime and a < p
 $a^{p - 1} \equiv 1 \pmod{p}$  
 $a^{p - 2} \equiv a^{-1} \pmod{p}$ --> Used for finding multiplicative inverse, only when a and p are coprime  
 $a^{p} \equiv a \pmod{p}$  
-$F_p = \{0,1,2,\ldots,p - 1\}$  
+In $F_p = {0,1,2,...,p - 1}$  
 $∀g∈F_{p}, ∃d$ such that $g \cdot d \equiv 1 \pmod{p}$  
 d is known as the multiplicative inverse of g  
 
