@@ -83,7 +83,7 @@ Output: $[k]P ∈ E(F_p)$
 $R_0, R_1 = P, [2]P$  
 for i in range($n - 2$):  
   if $k_i = 0: R_0, R_1 = [2]R_0, R_0 + R_1$  
-  else: $R_0, R_1 = R_0 + R_1, [2]R_0$ 
+  else: $R_0, R_1 = R_0 + R_1, [2]R_0$  
 return $R_0$  
 
 This algorithm ensures that each time the coordinate is multiplied, it takes the same time by adding to itself and vice versa. This prevents timing attacks as addition is much faster than multiplication.  
