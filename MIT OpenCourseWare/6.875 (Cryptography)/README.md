@@ -1,1 +1,1 @@
-You will always be $> \frac{1}{p(k)}$
+I'm bored so I watched all of it
