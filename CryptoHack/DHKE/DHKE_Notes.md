@@ -1,11 +1,11 @@
-### __RSA Revision__
+# RSA Revision
 Python: pow(base, exponent, modulus)  
 Encryption: $c = m^{e} \pmod{N}$  
 Euler's Totient Function: $\varphi(N) = (p - 1)(q - 1)$  
 Modular Multiplicative Inverse: $d \equiv e^{-1} \pmod{\varphi(N)}$  
 Decryption: $m = c^{d} \pmod{N}$, $N = p \cdot q$  
 
-### __RSA Signing__
+# RSA Signing
 Sender:  
 $c = m^{e_{0}} \pmod{N}$, encrypt the messagin using the your friend's public key  
 $H(m)$ is a function to calculate the Hash of the original message; each hash is unique for every message. We will use this to ensure that the receiver knows if the message has been tampered with.  
@@ -15,7 +15,7 @@ $m = c^{e_{1}} \pmod{N}$, decrypt the message using your private key
 $s = S^{d_{0}} \pmod{N}$, decrypt the hash of the original message with your friend's public key  
 If $H(m) = s$, the message is the original  
 
-### __Diffie-Hellman Key Exchange__
+# Diffie-Hellman Key Exchange
 Diffie-Hellman Key Exchange is a method used to generate the same key for 2 individuals without even meeting up. Alice and Bob both agree on a public base $g$ and a public modulus $p$. They then each choose a private exponent, a and b  
 They will then both calculate this:  
 $g^{a} \pmod{p}$ --> Alice  
@@ -25,7 +25,7 @@ When they both receive the new information, they will apply their private expone
 $SK = g^{ab} \pmod{p}$  
 This key exchange works on the fact that for every element in $F_{p}$ where p is prime, for all non-zero elements, there exists an $x$ where $x \cdot x^{-1} \equiv 1 \pmod{p}$. This allows us to easily calculate inverses when doing modulo math.  
 
-### __Generators__
+# Generators
 Generators, $g$, are elements in $F_{p}$ such that there is a subgroup $H = {g, g^{2},...,g^{p - 1}}$  
 Where all the elements in $F_{p}$ can be written as $g^{n} \pmod{p}$ for some integer $n < p$  
 Finding Generators:  
@@ -33,7 +33,7 @@ $\varphi(n) = p - 1 = \prod {q_i}^{k_n}$
 $g^\frac{\varphi(n)}{q_{i}} \pmod{n}$  
 In simple terms, separate the totient of p into its prime factors, then check using the second algorithm below, if none of the answers are 1, $g$ is a generator of $\pmod{p}$  
 
-### __Man-In-The-Middle__
+# Man-In-The-Middle
 Man-in-the-Middle is when you intercept and change the information between Alice and Bob. This is how to break Diffie-Hellman using a MITM attack.  
 Alice will send you g, p and A where $A = g^{a} \pmod{p}$, where a is Alice’s secret exponent  
 You will now need to send this information to Bob, however, you can manipulate it such that you are able to disconnect the Diffie-Hellman Key between both of them and make it such that you have a secret symmetrical key between Alice, you and Bob.  
@@ -54,7 +54,7 @@ a = discrete_log(p, A, g)
 This imported function helps to solve small discrete logs  
 This is usable for primes $< 2^{64}$ or about 20 digits  
 
-### __Baby-Step-Giant-Step__
+# Baby-Step-Giant-Step
 p is prime  
 Algorithm:  
 $A = g^{x} \pmod{p} = g^{x_1 \cdot + x_2}$  
@@ -74,7 +74,7 @@ Time Complexity: $O(\sqrt{p})$
 Space Complexity: $O(\sqrt{p})$  
 Works efficiently for $p < 2^{50}$ or about 16 digits  
 
-### __Pollard's Rho__
+# Pollard's Rho
 The algorithm uses the equation, $x_i = g^{a_i} \cdot A^{b_i}$  
 There is a pseudorandom algorithm that generates values a and b such that  
 $a_i, b_i, \neq a_j, b_j$ and $g^{a_j} \cdot g^{b_j} = x_j = x_i = g^{a_i} \cdot g^{b_i}$  
