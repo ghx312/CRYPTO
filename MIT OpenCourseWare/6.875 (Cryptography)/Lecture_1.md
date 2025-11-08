@@ -1,4 +1,4 @@
-Lecture 1
+Lecture 1 MIT Cryptography 6.875
 
 Adversary: (Unbounded Computationally, Eavesdropper)
 The adversary is the identity of the person who is trying to figure out your message.
