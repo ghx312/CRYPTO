@@ -37,7 +37,8 @@ In simple terms, separate the totient of p into its prime factors, then check us
 Man-in-the-Middle is when you intercept and change the information between Alice and Bob. This is how to break Diffie-Hellman using a MITM attack.  
 Alice will send you g, p and A where $A = g^{a} \pmod{p}$, where a is Alice’s secret exponent  
 You will now need to send this information to Bob, however, you can manipulate it such that you are able to disconnect the Diffie-Hellman Key between both of them and make it such that you have a secret symmetrical key between Alice, you and Bob.  
-Create a secret exponent m.  
+Create a secret exponent m.
+
 Calculate:  
 $M = g^{m} \pmod{p}$ and send g, p and M to Bob  
 Bob will then send you B, where $B = g^{b} \pmod{p}$ where, b is Bob’s secret exponent  
@@ -45,7 +46,8 @@ You will now need to send M to Alice. Alice will think that M is B, but it’s a
 You now have a secret key between you and Alice, $SK_{Alice} = A^{m} \pmod{p} = g^{am} \pmod{p}$  
 Alice will then attempt to send a message to Bob, giving you the IV and the Encrypted message. You can plug all the values into this MITM_Decrypt.py and read the secret message.  
 If you wish to stay hidden, you can also encrypt the message using the key you have with Bob, taken by $SK_{Bob} = B^{m} \pmod{p} = g^{bm} \pmod{p}$, using MITM_Encrypt.py  
-In the unfortunate case that you are only able to manipulate a little bit of the communication, for example, the number of bits they are going to use for the Diffie-Hellman, you are able to put in vulnerabilities that allow you to brute-force.  
+In the unfortunate case that you are only able to manipulate a little bit of the communication, for example, the number of bits they are going to use for the Diffie-Hellman, you are able to put in vulnerabilities that allow you to brute-force.
+
 Using:  
 from sympy.ntheory.residue_ntheory import *  
 a = discrete_log(p, A, g)  
