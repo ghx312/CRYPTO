@@ -1,23 +1,23 @@
 Lecture 1 MIT Cryptography 6.875
 
-Adversary: (Unbounded Computationally, Eavesdropper)
-The adversary is the identity of the person who is trying to figure out your message.
-It is essential to identify your adversary so that you can determine the computational power and time they have to break your encryption algorithm. (Usually, the assumption that your adversary has unbounded power, meaning that they have unlimited computational power and space)
+Adversary: (Unbounded Computationally, Eavesdropper)  
+The adversary is the identity of the person who is trying to figure out your message.  
+It is essential to identify your adversary so that you can determine the computational power and time they have to break your encryption algorithm. (Usually, the assumption that your adversary has unbounded power, meaning that they have unlimited computational power and space)  
 
-There are 2 types of adversaries:
-Adversary EVE, where the adversary can only listen in on all the information
-EVE(), is a function that gives an output based off the PPT, c and m’s given
-Adversary Active (Mallory), where the adversary can forge or alter messages
+There are 2 types of adversaries:  
+Adversary EVE, where the adversary can only listen in on all the information  
+EVE(), is a function that gives an output based off the PPT, c and m’s given 
+Adversary Active (Mallory), where the adversary can forge or alter messages  
 
-What does the adversary know?
-Kerrcoff’s Law: The adversary knows G.E.D (Has full knowledge of the algorithm)
-Ciphertext only: The adversary can only know c, which is passed through insecure channels/public channels
+What does the adversary know?  
+Kerrcoff’s Law: The adversary knows G.E.D (Has full knowledge of the algorithm)  
+Ciphertext only: The adversary can only know c, which is passed through insecure channels/public channels  
 
-What does the adversary not know?
-The adversary does not know the state that G() was run in (The random state that was used to get sk), they do not know sk for E() and sk for D()
+What does the adversary not know?  
+The adversary does not know the state that G() was run in (The random state that was used to get sk), they do not know sk for E() and sk for D()  
 
-Why does the adversary know?
-It is safer to assume that the adversary knows and allows you to prove that your encryption algorithm is secure in the worst-case scenario. In real life, if an algorithm is safe, it would be widely implemented, thereby greatly reducing the likelihood that the adversary does not know G.E.D.
+Why does the adversary know?  
+It is safer to assume that the adversary knows and allows you to prove that your encryption algorithm is secure in the worst-case scenario. In real life, if an algorithm is safe, it would be widely implemented, thereby greatly reducing the likelihood that the adversary does not know G.E.D.  
 
 What do we want from an encryption algorithm:
 The adversary should not be able to compute the plaintext from ciphertexts
