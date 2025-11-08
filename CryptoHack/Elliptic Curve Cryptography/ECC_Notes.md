@@ -49,7 +49,7 @@ Scalar Multiplication is the repeated addition of the same point n times; this i
 Input: $P ∈ E(F_p), n > 0$  
 Output: $Q = [n]P ∈ E(F_p)$  
 Let $-> Q = P, R = O$  
-$-> While n > 0$  
+-> While $n > 0$  
 If $n \equiv 1 \pmod{2}$ (n is odd) $-> R += Q$  
 Let $Q = [2]Q, n = [n/2]$  
 return $R = [n]P$  
@@ -80,15 +80,11 @@ Montgomery’s Ladder, also known as Montgomery’s Binary Algorithm, is a secur
 Input: $P ∈ E(F_p), k = \sum 2^{i} \cdot k_i, k_{n - 1} = 1$  
 Output: $[k]P ∈ E(F_p)$  
 
-$R_0, R_1 = P, [2]P$
-
-for i in range($n - 2$):
-
-  if $k_i = 0: R_0, R_1 = [2]R_0, R_0 + R_1$
-  
-  else: $R_0, R_1 = R_0 + R_1, [2]R_0$
-  
-return $R_0$
+$R_0, R_1 = P, [2]P$  
+for i in range($n - 2$):  
+  if $k_i = 0: R_0, R_1 = [2]R_0, R_0 + R_1$  
+  else: $R_0, R_1 = R_0 + R_1, [2]R_0$ 
+return $R_0$  
 
 This algorithm ensures that each time the coordinate is multiplied, it takes the same time by adding to itself and vice versa. This prevents timing attacks as addition is much faster than multiplication.  
 
