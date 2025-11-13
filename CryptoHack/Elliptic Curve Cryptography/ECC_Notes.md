@@ -110,3 +110,6 @@ In simple terms, this algorithm splits up a hard problem, or a problem with many
 Its like having a 10-digit lock with over $10^{10}$ possible combinations, using this algorithm to split this lock into 10 1-digit locks with 10 combinations each, greatly reducing the complexity and combining the lock at the end using the Chinese Remainder Theorem to get the full lock.  
 You solve part of n for each small modulo p.  
 This is only applicable if q is factorable, or if q is a smooth number  
+
+# MOV Attack/Weil's Pairings
+Add something about the MOV attack for ECC
