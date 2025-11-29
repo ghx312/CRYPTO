@@ -1,4 +1,4 @@
-**Adversary: (Unbounded Computationally, Eavesdropper)*
+**Adversary: (Unbounded Computationally, Eavesdropper)**
 The adversary is the identity of the person who is trying to figure out your message.
 
 It is essential to identify your adversary so that you can determine the computational power and time they have to break your encryption algorithm. (Usually, the assumption that your adversary has unbounded power, meaning that they have unlimited computational power and space)
