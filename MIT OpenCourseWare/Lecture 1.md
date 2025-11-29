@@ -45,7 +45,7 @@ If an algorithm has perfect secrecy, the chance that the adversary guesses the n
 
 In simple terms, the ciphertext, c, does not give out any information on what the plaintext, m, is.
 
-**Perfect Indistinguishability**
+**Perfect Indistinguishability**  
 $\forall$ m, m, in M  
 $\forall$ c in C
 $P(C=c|M=m)=P(C=c|M=m)$
