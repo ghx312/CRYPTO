@@ -13,7 +13,7 @@ Kerrcoff’s Law: The adversary knows G.E.D (Has full knowledge of the algorithm
 Ciphertext only: The adversary can only know c, which is passed through insecure channels/public channels
 
 What does the adversary not know?  
-The adversary does not know the state that G() was run in (The random state that was used to get SK), they do not know SK for E() and SK for D()
+The adversary does not know the state that G( ) was run in (The random state that was used to get SK), they do not know SK for E( ) and SK for D( )
 
 Why does the adversary know?  
 It is safer to assume that the adversary knows and allows you to prove that your encryption algorithm is secure in the worst-case scenario. In real life, if an algorithm is safe, it would be widely implemented, thereby greatly reducing the likelihood that the adversary does not know G.E.D.
