@@ -40,7 +40,7 @@ K \= {Set of all Keys}, C \= {Set of all Ciphertexts}, M \= {Set of all Plaintex
 C is all possible ciphertexts, M is all possible messages   
 $\forall$ probability distribution over M  
 $\forall$ c in C, m in M  
-$P(M=m)=P(M=m|C=c)$ or $P(M=m)=P(M=m|E(sk,m)=c)$
+$P(M=m)=P(M=m|C=c)$ or $P(M=m)=P(M=m|E(sk,m)=c)$  
 If an algorithm has perfect secrecy, the chance that the adversary guesses the non-zero probability of m is equal to the chance that the adversary guesses the non-zero probability of m when they know c.
 
 In simple terms, the ciphertext, c, does not give out any information on what the plaintext, m, is.
