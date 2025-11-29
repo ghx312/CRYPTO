@@ -28,7 +28,7 @@ Reduction is the act of condensing an algorithm to its mathematical problem, whe
 
 The reduced algorithm is the underlying mathematical problem that needs to be solved to “crack” the algorithm
 
-**Basics: Functions of an encryption algorithm** 
+**Basics: Functions of an encryption algorithm**  
 G($1^k$) - Randomised algorithm that produces the SK (Secret key) of k length ($k$ = l$)  
 E(SK, m) = c, - Algorithm that encrypts the m (Plaintext)  
 D(SK, c) = m, - Algorithm that decrypts the c (Ciphertext)   
@@ -36,7 +36,7 @@ Correctness: When the ciphertext is run through the Decryption function with the
 Security: The ciphertext reveals nothing useful to the adversary  
 K \= {Set of all Keys}, C \= {Set of all Ciphertexts}, M \= {Set of all Plaintexts}
 
-**Perfect Secrecy (Shannon’s Secrecy Definition)** 
+**Perfect Secrecy (Shannon’s Secrecy Definition)**  
 C is all possible ciphertexts, M is all possible messages   
 $\forall$ probability distribution over M  
 $\forall$ c in C, m in M  
