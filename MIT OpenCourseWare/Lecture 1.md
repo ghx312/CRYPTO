@@ -46,12 +46,12 @@ If an algorithm has perfect secrecy, the chance that the adversary guesses the n
 In simple terms, the ciphertext, c, does not give out any information on what the plaintext, m, is.
 
 **Perfect Indistinguishability**  
-$\forall$ $m$, $m^{'}$ in M  
+$\forall$ $m$, $m^{,}$ in M  
 $\forall$ c in C
-$P(C=c|M=m)=P(C=c|M=m^{'})$
+$P(C=c|M=m)=P(C=c|M=m^{,})$  
 If an algorithm has perfect indistinguishability, it means that there is an equal chance between all messages that the ciphertext, when decoded, can be.
 
-In simple terms, when the adversary has the ciphertext, there is an equal chance that the ciphertext is m1 , and m2   
+In simple terms, when the adversary has the ciphertext, there is an equal chance that the ciphertext is $m_{1}$ or $m_{2}$   
 E.g. c = oadbwyeifabo, m1 = hello, m2 =  你好, $P(M = m_1) = P(M = m_2)$
 It does not matter which language, datatype or length of the message or ciphertext, c has an equal chance of being any of m. It does not allow the adversary to deduce any information about the contents of the message. 
 
