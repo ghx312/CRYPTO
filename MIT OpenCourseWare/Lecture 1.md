@@ -67,21 +67,21 @@ D(SK, c) = $SK \oplus c = m$
 This encryption scheme achieves Perfect Secrecy as there is only 1 key to a message that matches a predetermined ciphertext, vice versa, making all messages and ciphertexts equally likely, achieving Perfect Secrecy
 
 Proof:  
-Fix $m$, $c \in \{0,1\}^l$ 
-$P(C = c) = P_{SK}(SK \oplus m = c) = P_{SK}(SK = m \oplus c) = \frac{1}{2^l}$
-Thus, $c$, $m_1$, $m_2$
+Fix $m$, $c \in \{0,1\}^l$  
+$P(C = c) = P_{SK}(SK \oplus m = c) = P_{SK}(SK = m \oplus c) = \frac{1}{2^l}$  
+Thus, $c$, $m_1$, $m_2$  
 $P_{SK}(C = c|M = m_1) = P_{SK}(C = c|M = m_2)$ (Perfect Indistinguishability)  
 Since One-Time Pad G.E.D achieves Perfect Indistinguishability => Perfect Secrecy
 
-In simple terms, m and c can only be 1 or 0, for the length of the message. The probability that any c is equivalent to a predetermined c is $\frac{1}{2^l}$ as there are 2 possible states for each digit of SK and SK has a length of l.
-Since $SK \oplus m = c$, there is only 1 possible SK when XORed with a predetermined m gives c, hence the probability that any SK when XORed with a predetermined m gives c is the same as $\frac{1}{2^l}$.
+In simple terms, m and c can only be 1 or 0, for the length of the message. The probability that any c is equivalent to a predetermined c is $\frac{1}{2^l}$ as there are 2 possible states for each digit of SK and SK has a length of l.  
+Since $SK \oplus m = c$, there is only 1 possible SK when XORed with a predetermined m gives c, hence the probability that any SK when XORed with a predetermined m gives c is the same as $\frac{1}{2^l}$.  
 Following XOR logic, we can determine that $P_{SK} (SK = m \oplus c) = \frac{1}{2^l}$ as there is only 1 possible option of SK when predetermined m XOR c  
-Thus, $P_{SK} (m_1 \oplus SK = c) = P_{SK} (m_2 \oplus SK = c)$, as $P(SK \oplus c = m)$ are equal for all possible SK.
-Since One-Time Pad G.E.D achieves Perfect Indistinguishability => Perfect Secrecy
+Thus, $P_{SK} (m_1 \oplus SK = c) = P_{SK} (m_2 \oplus SK = c)$, as $P(SK \oplus c = m)$ are equal for all possible SK.  
+Since One-Time Pad G.E.D achieves Perfect Indistinguishability => Perfect Secrecy  
 
-Why a One-Time Pad can only be used once (Without changing SK):
-Proof:
-Consider the case that 2 messages of length l, each encrypted using the same SK
+Why a One-Time Pad can only be used once (Without changing SK):  
+Proof:  
+Consider the case that 2 messages of length l, each encrypted using the same SK  
 Let $m = m_1 || m_2$ ,$m^{'} = m_{1}^{'} || m_{2}^{'}$, $c = c_1 || c_1$ where $m_1 = m_2$ and $m_{1}^{'} \neq m_{2}^{'}$ , since the ciphertext is made up of $2c_1$, due to XOR logic, we know that the first half and second half of the plaintext is the same, since we know that $m_{1}^{'} \neq m_{2}^{'}$, we can deduce that $P_{SK}(m^{'} \oplus SK = c) = 0$ as there is no SK that can XOR 2 different messages into the same ciphertext, while we know that $P_{SK} (m \oplus SK = c) > 0$, as there is a SK that can XOR 2 same messages into the same ciphertext. Since Perfect Indistinguishability requires $P(C = c|M = m) = P(C = c|M = m)$, and we know that $P_{SK} (m \oplus SK = c) \neq P_{SK} (m^{'} \oplus SK = c)$ this shows that if One-Time Pad is used twice (without changing SK), it will not have Perfect Indistinguishability.
 
 ---
