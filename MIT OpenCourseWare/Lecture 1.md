@@ -23,7 +23,7 @@ The adversary should not be able to compute the plaintext from ciphertexts
 The adversary should not be able to compute any partial information about the plaintext from the ciphertext.(Perfect Secrecy)  
 The adversary should not be able to compute relations between ciphertexts. (Perfect indistinguishability, also the vulnerability that led to the downfall of the Enigma machine)
 
-**Reduction/Reduced Algorithm**
+**Reduction/Reduced Algorithm**  
 Reduction is the act of condensing an algorithm to its mathematical problem, whether it be a computationally hard problem of factoring large integers or discrete logarithms 
 
 The reduced algorithm is the underlying mathematical problem that needs to be solved to “crack” the algorithm
