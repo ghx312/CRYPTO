@@ -71,7 +71,7 @@ Fix $m$, $c \in$ { $0,1$ } $^l$
 $P(C = c) = P_{SK}(SK \oplus m = c) = P_{SK}(SK = m \oplus c) = \frac{1}{2^l}$  
 Thus, $c$, $m_1$, $m_2$  
 $P_{SK}(C = c|M = m_1) = P_{SK}(C = c|M = m_2)$ (Perfect Indistinguishability)  
-Since One-Time Pad G.E.D achieves Perfect Indistinguishability => Perfect Secrecy
+Since One-Time Pad G.E.D achieves Perfect Indistinguishability -> Perfect Secrecy
 
 In simple terms, m and c can only be 1 or 0, for the length of the message. The probability that any c is equivalent to a predetermined c is $\frac{1}{2^l}$ as there are 2 possible states for each digit of SK and SK has a length of l.  
 Since $SK \oplus m = c$, there is only 1 possible SK when XORed with a predetermined m gives c, hence the probability that any SK when XORed with a predetermined m gives c is the same as $\frac{1}{2^l}$.  
