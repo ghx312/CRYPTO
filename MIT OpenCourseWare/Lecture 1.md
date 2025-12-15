@@ -30,11 +30,11 @@ The reduced algorithm is the underlying mathematical problem that needs to be so
 
 **Basics: Functions of an encryption algorithm**  
 G($1^k$) - Randomised algorithm that produces the SK (Secret key) of k length ($k$ = l$)  
-E(SK, m) = c, - Algorithm that encrypts the m (Plaintext)  
-D(SK, c) = m, - Algorithm that decrypts the c (Ciphertext)   
+E(SK, m) = c, Algorithm that encrypts the m (Plaintext)  
+D(SK, c) = m, Algorithm that decrypts the c (Ciphertext)   
 Correctness: When the ciphertext is run through the Decryption function with the SK, you will obtain the original message  
 Security: The ciphertext reveals nothing useful to the adversary  
-K \= {Set of all Keys}, C \= {Set of all Ciphertexts}, M \= {Set of all Plaintexts}
+K = {Set of all Keys}, C = {Set of all Ciphertexts}, M = {Set of all Plaintexts}
 
 **Perfect Secrecy (Shannon’s Secrecy Definition)**  
 C is all possible ciphertexts, M is all possible messages   
