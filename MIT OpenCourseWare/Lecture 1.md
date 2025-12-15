@@ -60,7 +60,7 @@ If an algorithm satisfies Perfect Indistinguishability, it also satisfies Perfec
 **One-Time Pad** (Encryption System)  
 $m_1$, $c$, $SK \in ${ $0,1$ } $^{l}$ is the security parameter  
 (Security parameter is the possible type of input, key and output for this encryption system, in this case it is 0 and 1, which is binary, where l is the length of the message)  
-G($1^l$) chooses SK at random $\{0,1\}^l$   
+G($1^l$) chooses SK at random { $0,1$ } $^l$   
 E(SK, m) = $SK \oplus m = c$  
 D(SK, c) = $SK \oplus c = m$
 
