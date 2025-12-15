@@ -67,7 +67,7 @@ D(SK, c) = $SK \oplus c = m$
 This encryption scheme achieves Perfect Secrecy as there is only 1 key to a message that matches a predetermined ciphertext, vice versa, making all messages and ciphertexts equally likely, achieving Perfect Secrecy
 
 Proof:  
-Fix $m$, $c \in$ {$0,1$}$^l$  
+Fix $m$, $c \in$ { $0,1$ } $ ^1 $  
 $P(C = c) = P_{SK}(SK \oplus m = c) = P_{SK}(SK = m \oplus c) = \frac{1}{2^l}$  
 Thus, $c$, $m_1$, $m_2$  
 $P_{SK}(C = c|M = m_1) = P_{SK}(C = c|M = m_2)$ (Perfect Indistinguishability)  
