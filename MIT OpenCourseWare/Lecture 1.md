@@ -77,7 +77,7 @@ In simple terms, m and c can only be 1 or 0, for the length of the message. The 
 Since $SK \oplus m = c$, there is only 1 possible SK when XORed with a predetermined m gives c, hence the probability that any SK when XORed with a predetermined m gives c is the same as $\frac{1}{2^l}$.  
 Following XOR logic, we can determine that $P_{SK} (SK = m \oplus c) = \frac{1}{2^l}$ as there is only 1 possible option of SK when predetermined m XOR c  
 Thus, $P_{SK} (m_1 \oplus SK = c) = P_{SK} (m_2 \oplus SK = c)$, as $P(SK \oplus c = m)$ are equal for all possible SK.  
-Since One-Time Pad G.E.D achieves Perfect Indistinguishability => Perfect Secrecy  
+Since One-Time Pad G.E.D achieves Perfect Indistinguishability -> Perfect Secrecy  
 
 Why a One-Time Pad can only be used once (Without changing SK):  
 Proof:  
