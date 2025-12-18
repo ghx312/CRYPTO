@@ -98,7 +98,7 @@ x => f(x) is trivial
 f(x) => x is a hard problem  
 
 **Easy to Evaluate**  
-$\exists$PPT Algorithm A, such that $A(x) = f(x)$ $\forall x$
+$\exists$ PPT Algorithm A, such that $A(x) = f(x)$ $\forall x$
 
 **Hard to Invert**
 $\forall$PPT Algorithm Inverter, $\forall$ non-negligible $\varepsilon()$, $\exists k_0$, $\forall k > k_0$  
