@@ -31,7 +31,7 @@ Euler’s Totient Function $\phi()$
 
 Generator:  
 $a \in G$, { $a$ } = { $a^1$, $a^2,\dots,a^{|G|}$ }|{ $a^1$, $a^2,\dots,a^{|G|}$ } $= Z_N$ (Multiplicative Groups)  
-$a \in G$, $\{a\} = \{a$, $2a$, $3a,\dots,a^{|G|}\}|\{a$, $2a$, $3a,\dots,a^{|G|}\} = Z_N$ (Additive Groups)  
+$a \in G$, { $a$ } = { $a$, $2a$, $3a,\dots,a^{|G|}$ }|{ $a$, $2a$, $3a,\dots,a^{|G|}\} = Z_N$ (Additive Groups)  
 A generator is a number when raised to an increasing integer (For multiplicative groups) or added it itself (For additive groups), returns every element within the set.  
 {Primitive Roots}={Generators} Primitive Roots exist if the modulo is, 1, 2, 4, $p^k$, $2p^k$  
 $2p^k$ is for odd primes p  
