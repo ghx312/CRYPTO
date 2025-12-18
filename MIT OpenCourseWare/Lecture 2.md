@@ -71,7 +71,7 @@ $c =$ { $c_1$, $c_2,\dots,c_{P(k)}$ }
 It is the same logic, however, this time it is repeated over many messages, since all ciphertexts are different and messages, there is only 1 key that relates each message to each ciphertext, making it impossible to know which ciphertext is to which pair of messages, let alone knowing the message by itself.
 
 Randomised Encryption:  
-$C_1 = E(s$, $m$, $r)$
+$C_1 = E(s$, $m$, $r)$  
 r represents a random state where it chooses a random ciphertext from the list of all possible ciphertexts. When the same plaintext is run with the same key, there must be an exponential list of ciphertexts that are not equal to each other, r then use the state that the chosen data was in to select a corresponding ciphertext. r must be from a data set with high entropy to prevent cryptoanalysis vulnerabilities.
 
 Semantic Security (SS):  
