@@ -57,7 +57,7 @@ $a \cdot x + p \cdot y = GCD(a$, $p) = 1$, find x, $x = a^{-1}$
 $a^b \pmod{n}$
 
 **Multiplicative Modular Math**  
-$G = (Z_{N}^{\*} = \{1 \leq z < N|GCD(z, n) = 1\}, \times)$  
+$G = (Z_{N}^{\*} =$ { $1 \leq z < N|GCD(z, n) = 1$ }, $\times)$  
 $|Z_{N}^{\*}| = \phi(n)$, $|Z_{8}^{\*}| = 4$, $|Z_{7}^{\*}| = 6$  
 $|Z_{p}^{\*}| = p - 1$, for p prime  
 $\phi(p \cdot q) = (p - 1)(q - 1)$ where p and q are coprime  
