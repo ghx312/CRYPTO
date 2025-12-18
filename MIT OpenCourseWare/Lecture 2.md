@@ -100,21 +100,21 @@ f(x) => x is a hard problem
 **Easy to Evaluate**  
 $\exists$ PPT Algorithm A, such that $A(x) = f(x)$ $\forall x$
 
-**Hard to Invert**
-$\forall$PPT Algorithm Inverter, $\forall$ non-negligible $\varepsilon()$, $\exists k_0$, $\forall k > k_0$  
+**Hard to Invert**  
+$\forall$ PPT Algorithm Inverter, $\forall$ non-negligible $\varepsilon()$, $\exists k_0$, $\forall k > k_0$  
 $P($Inverter$(1^k$, $f(x)) = x^{'}|f(x^{'}) = f(x)) < \varepsilon(k)$
 
-In simple terms, there will always be a PPT algorithm that can easily calculate
+In simple terms, there will always be a PPT algorithm that can easily calculate  
 f(x), for any x. However, the chances that the inverse PPT algorithm works (The Decryption System by Adversary) is less than the vulnerability, making it negligible for large enough k.
 
-**Factoring Integers**
-OWF: Given an integer N, find its prime factors
+**Factoring Integers**  
+OWF: Given an integer N, find its prime factors  
 $p$, $q$ => $N = f(p \cdot q)$, is an easy problem as $p \cdot q = N$ is easy to calculate  
 $N = p \cdot q$ is a hard problem depending on the p, q chosen.
 
 Factoring Integers can be an OWF only when certain p, q are selected, mainly primes that are of equal length and $p \neq q$. The best inverse algorithm for these specific integers is sub-exponential time. (Index Calculus Method)
 
-**Weak One-Way Function (WOWF)**
+**Weak One-Way Function (WOWF)**  
 Easy to Evaluate: $\exists A$, $A(x) = f(x)$
 Weakly hard to invert:   
 $\exists \varepsilon (k) \geq \frac{1}{p(k)}$, such that $\forall A$, $\exists k_0$, $\forall k > k_0$ => $P(A(1^k$, $f(x) \neq x^{'})|f(x)=f(x^{'})) > \varepsilon(k)$
