@@ -20,8 +20,8 @@ $G$($Z_N$, $Operation$), where $Order(G) =$ $|G|$, where $|G|$ $=$ Number of ele
 
 Legendre's Theorem:  
 All outputs are within the group (Basically mod N)  
-$\forall a \in Z_N$ ,$a^{|G|} = e$ (e \= Multiplicative inverse)  
-$\forall a \in Z_N$, $ \cdot {|G|} = e$ (e \= Addition inverse)  
+$\forall a \in Z_N$, $a^{|G|} = e$ (e \= Multiplicative inverse)  
+$\forall a \in Z_N$, $a \cdot {|G|} = e$ (e \= Addition inverse)  
 
 Order(a):  
 $Order(a)$ = $min\{i > 0|a^i = e\}$ (e \= Multiplicative Inverse)  
