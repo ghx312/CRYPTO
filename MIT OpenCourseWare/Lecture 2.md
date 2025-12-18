@@ -9,7 +9,7 @@ Let $M_c = ${ $m$ such that $\exists k$ for which $m = D(k,c)$ }  (Set of m that
 Then $|K| > |M_c|$ (Since there is at least 1 key for each message)  
 and $|M| \geq |K|$ (Assumption for proof)  
 So, there exists some $m^{,} \in M$ for which there is no k, such that $D(k^{,}, c) = m^{,}$
-Hence, $P(C = c|M = m,) = 0$, since $P(C = c) > 0$ hence, $P(C = c|M = m) > 0$
+Hence, $P(C = c|M = m^{,}) = 0$, since $P(C = c) > 0$ hence, $P(C = c|M = m) > 0$
 Since, $P(C = c|M = m^{,}) = 0 \neq P(C = c|M = m)$, this violates the Perfect Indistinguishability, which in turn violates Perfect Secrecy, hence, $|K| \geq |M|$
 (Proof by Contradiction)
 
