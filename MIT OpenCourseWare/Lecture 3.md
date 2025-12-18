@@ -25,7 +25,7 @@ $\forall a \in Z_N$, $a \cdot {|G|} = e$ (e \= Addition inverse)
 
 Order(a):  
 $Order(a)$ = $min$ { $i > 0|a^i = e$ } (e \= Multiplicative Inverse)  
-If $Order(a) = |G|$, a is a generator  
+If $Order(a) =|G|$, a is a generator  
 Or  
 Euler’s Totient Function $\phi()$  
 
