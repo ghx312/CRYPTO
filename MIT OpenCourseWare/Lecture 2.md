@@ -5,7 +5,7 @@ $|k| \geq |m|$, $|K| \geq |M|$
 Proof:  
 Assume $|M| \geq |K|$
 Let c be such that $P(C = c) > 0$
-Let $M_c = ${$m$ such that $\exists k$ for which $m = D(k,c)$}  (Set of m that can be decrypted)  
+Let $M_c = ${ $m$ such that $\exists k$ for which $m = D(k,c)$ }  (Set of m that can be decrypted)  
 Then $|K| > |M_c|$ (Since there is at least 1 key for each message)  
 and $|M| \geq |K|$ (Assumption for proof)  
 So, there exists some $m^{'} \in M$ for which there is no k, such that $D(k^{'}, c) = m^{'}$
