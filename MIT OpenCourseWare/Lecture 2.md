@@ -78,7 +78,7 @@ Semantic Security (SS):
 $\forall$ PPT EVE, $\exists$ PPT EVE,  
 $\forall$ Polynomial time sampleable distribution M  
 $\forall$ functions f:M => {0,1}  
-$\forall$ non-negligible functions: $\varepsilon > 0, \exists k_0$ such that k\>k0  
+$\forall$ non-negligible functions: $\varepsilon > 0, \exists k_0$ such that $k > k_0$  
 $|P_M[EVE^{'}(1^k) = f(M)] - P_M[EVE(1^k$, $c) = f(M)|E(SK,$ $M) = c]| < \varepsilon(k)$
 
 $f(M)$ is the function that “generates” the plaintext or a function that relates to the plaintext such that for all plaintexts, $f()$ is true. (E.g. $f(M)$ \= “Is the first bit 1 or 0”)  
