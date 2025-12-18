@@ -52,7 +52,7 @@ $P(C=c|M=m)=P(C=c|M=m^{,})$
 If an algorithm has perfect indistinguishability, it means that there is an equal chance between all messages that the ciphertext, when decoded, can be.
 
 In simple terms, when the adversary has the ciphertext, there is an equal chance that the ciphertext is $m_{1}$ or $m_{2}$   
-E.g. c = oadbwyeifabo, m1 = hello, m2 =  你好, $P(M = m_1) = P(M = m_2)$
+E.g. c = oadbwyeifabo, $m_1$ = hello, $m_2$ =  你好, $P(M = m_1) = P(M = m_2)$
 It does not matter which language, datatype or length of the message or ciphertext, c has an equal chance of being any of m. It does not allow the adversary to deduce any information about the contents of the message. 
 
 If an algorithm satisfies Perfect Indistinguishability, it also satisfies Perfect Secrecy, vice versa. (In practice, OTP is the only useful algorithm that achieves this)
