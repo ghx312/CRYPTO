@@ -91,13 +91,13 @@ $g^{\frac{\phi(n)}{q_i}} \pmod{n}$
 In simple terms, separate the totient of p into its prime factors, then check using the algorithm below, if none of the answer are 1, g is a generator  
 
 **Strong Primes**  
-$p = \vartheta q + 1$, where q is prime,  is an integer  
+$p = \vartheta q + 1$, where q is prime, $\vartheta$ is an integer  
 or  
 $p - 1 = \vartheta q$  
 In simple terms, this ensures that $p - 1$ is not a number that only consists of small factors, making it easy to find the $\phi(p)$. This helps to keep p is a safe prime, not vulnerable to totient formula attacks
 
 **Discrete Algorithm Problems**
-$F = \{F_{n^{'}}$ $D_{n^{'}}\}_{n \in N}$
+$F =$ { $F_{n^{'}}$ $D_{n^{'}}$ } $_{n \in N}$
 $F_n = \{f:D_n$->$R_n\}$ (A function that gives the corresponding output from the input)
 
 The goal
