@@ -66,7 +66,7 @@ $\forall$ polynomial time sampleable message space M (It's just M)
 $\forall$ PPT algorithm EVE  
 $\forall$ Non-negligible functions $\varepsilon$, $\exists k_0$ such that all $k > k_0$  
 $P[EVE(m_0$, $m_1$, $c) = b)] < \frac{1}{2} + \varepsilon(k)$  
-But this time $m_0 = ${ $m_{0}^{1}$, $m_{0}^{2}, \dots ,m_{0}^{P(k)}\}$, and $m_1 = \{m_{1}^{1}$,$m_{1}^{2}, \dots ,m_{1}^{P(k)}\}$ where $c_1 = E(SK, m_1^b)$
+But this time $m_0 = ${ $m_{0}^{1}$, $m_{0}^{2}, \dots ,m_{0}^{P(k)}$ }, and $m_1 =$ { $m_{1}^{1}$,$m_{1}^{2}, \dots ,m_{1}^{P(k)}$ } where $c_1 = E(SK, m_1^b)$
 $c = \{c_1$, $c_2,\dots,c_{P(k)}\}$
 It is the same logic, however, this time it is repeated over many messages, since all ciphertexts are different and messages, there is only 1 key that relates each message to each ciphertext, making it impossible to know which ciphertext is to which pair of messages, let alone knowing the message by itself.
 
