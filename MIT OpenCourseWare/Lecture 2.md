@@ -135,14 +135,14 @@ This function takes N numbers of $f(x)$ which contain both weak and hardcore inp
 $|x_i| = k$ is just the length of each randomly selected x
 
 If an adversary works by inverting each coordinate, f(x) individually, we get an immediate bound on the success probability:  
-$(1 - \frac{1}{Q(k)})^{kQ(k)}$ => $[(1 - \frac{1}{Q(k)})^{Q(k)}]^{k}$ => $\frac{1}/e^k$
+$(1 - \frac{1}{Q(k)})^{kQ(k)}$ -> $[(1 - \frac{1}{Q(k)})^{Q(k)}]^{k}$ => $\frac{1}/e^k$
 As, $(1 - \frac{1}{Q(k)})^{Q(k)}$, $k \rightarrow \infty$, $Q(k) \rightarrow \infty$, $(1 - \frac{1}{Q(k)})^{Q(k)} \rightarrow \frac{1}{e}$, $n=Q(k)$, $\lim_{n \to \infty} (1 - \frac{1}{n})^n = \frac{1}{e}$ 
 Hence, $P(EVE(F(x_i)) = x_{i}^{'}|f(x_{i}^{'}) = f(x_i)) \leq \frac{1}{e^k}$
 In simple terms, P\[Adversary Succeeding\] the maximum is $\frac{1}{e^k}$
 (This is not formal proof, just intuition)
 
 **Formal Proof** 
-A reduction F not strong => f not weak  
+A reduction F not strong -> f not weak  
 Assume F is not strong, which means that $\exists \varepsilon > \frac{1}{p(k)}$, let there be $A^{'}$ s.t for inf. many $k^{'}$, $P(A^{'}(F(x_1,\dots,x_N))$ inverts$) > \varepsilon(k^{'})$
 
 Define A(y):
