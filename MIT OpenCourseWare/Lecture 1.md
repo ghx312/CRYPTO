@@ -29,7 +29,7 @@ Reduction is the act of condensing an algorithm to its mathematical problem, whe
 The reduced algorithm is the underlying mathematical problem that needs to be solved to “crack” the algorithm
 
 **Basics: Functions of an encryption algorithm**  
-G($1^k$) - Randomised algorithm that produces the SK (Secret key) of k length ($k$ = l$)  
+G($1^k$) - Randomised algorithm that produces the SK (Secret key) of k length ($k$ = $l$)  
 E(SK, m) = c, Algorithm that encrypts the m (Plaintext)  
 D(SK, c) = m, Algorithm that decrypts the c (Ciphertext)   
 Correctness: When the ciphertext is run through the Decryption function with the SK, you will obtain the original message  
