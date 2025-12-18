@@ -29,7 +29,7 @@ Perfect secrecy is not a reasonable standard to achieve; hence, Perfect Indistin
 
 Revised Encryption Definition:  
 G($1^k$) - Randomised algorithm that produces the SK (Secret key) of k length ($k = l$)  
-E(SK, m) = c - Algorithm that encrypts the m (Plaintext)
+E(SK, m) = c - Algorithm that encrypts the m (Plaintext)  
 D(SK, c) = m, - Algorithm that decrypts the c (Ciphertext)   
 Correctness: When the ciphertext is run through the Decryption function with the SK, you will obtain the original message.
 Computational Security: With respect to the PPT of Adversary EVE (New)
