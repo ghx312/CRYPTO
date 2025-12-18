@@ -1,6 +1,6 @@
 Definitions:  
 Negligible Function: A function $f(k)$ is negligible if $\forall p(k)$, $\exists k_0$, $\forall k > k_0$, $f(k) < \frac{1}{p(k)}$  
-OWF: $f:$ { $0,1$ } ^{*}$ -> { $0,1$ } $^{*}$, $\forall PPT A$, $P(A(f(x) = x^{'}|f(x^{'}) = f(x)) < \frac{1}{p(k)}$  
+OWF: $f:$ { $0,1 {}^{*}$ -> { $0,1$ } $^{*}$, $\forall PPT A$, $P(A(f(x) = x^{'}|f(x^{'}) = f(x)) < \frac{1}{p(k)}$  
 WOWF: $f:\{0,1\}^*$ => $\{0,1\}^{*}$, $\forall PPT A$, $P(A(f(x) = x^{'}|f(x^{'}) = f(x)) < 1 - \frac{1}{Q(k)}$  
 There will never be OWFs, only candidate OWFs.
 
