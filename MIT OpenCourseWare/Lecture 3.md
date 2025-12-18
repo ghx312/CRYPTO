@@ -97,7 +97,7 @@ $p - 1 = \vartheta q$
 In simple terms, this ensures that $p - 1$ is not a number that only consists of small factors, making it easy to find the $\phi(p)$. This helps to keep p is a safe prime, not vulnerable to totient formula attacks
 
 **Discrete Algorithm Problems**  
-$F =$ { $F_{n^{'}}$ $D_{n^{'}}$ } $_{n \in N}$
+$F =$ { $F_{n^{'}}$ $D_{n^{'}}$ }$_{n \in N}$  
 $F_n =$ { $f:D_n$->$R_n$ } (A function that gives the corresponding output from the input)
 
 The goal
