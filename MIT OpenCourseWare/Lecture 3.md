@@ -68,7 +68,7 @@ Cyclic:
 $Z_p^{*}$, $Order(a)|(p - 1)$, $a^d = 1 \pmod{p}$  
 Let's say there is a set for all exponents d where $a^d = 1 \pmod{p}$  
 If there is 1 value, a in the set, there are many values in the set where the set is  
-$d_1 = \{1$, $a$, $a^2$, $a^3,\dots,a^{d-1}\}$  
+$d_1 =$ { $1$, $a$, $a^2$, $a^3,\dots,a^{d-1}$ }  
 
 Discrete Logarithm Problem (Formally)  
 $G(Z_p^{*}$, $\times)$  
