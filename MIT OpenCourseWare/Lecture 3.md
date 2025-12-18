@@ -100,7 +100,7 @@ In simple terms, this ensures that $p - 1$ is not a number that only consists of
 $F =$ { $F_{n^{'}}$ $D_{n^{'}}$ } $_{n \in N}$  
 $F_n =$ { $f:D_n$->$R_n$ } (A function that gives the corresponding output from the input)
 
-The goal
+The goal  
 → Sample a $f_y \in F_N$ in $poly(n)$ time (Finding an OWF)  
 → Sample an element in $D_n$ in $poly(n)$ time (Finding an element)  
 → $f_y$ in $poly(n)$ (Computing the function)  
@@ -111,50 +111,50 @@ $len(D_n) = len(R_n)$ (There is a unique output for every valid input)
 
 In simple terms, there are a family of problems known as $F_n$, where there are $D_n$ inputs and $R_n$ outputs, and an example of one of the members of this family is $DLOG()$
 
-Solving for x:
-$a = g^x = g^{x_1 \cdot m + x_2}$, $m \approx \sqrt{p}$
+Solving for x:  
+$a = g^x = g^{x_1 \cdot m + x_2}$, $m \approx \sqrt{p}$  
 $a \cdot g^{-x_2} = (g^{m})^{x_1}$
 
 Algorithm to find $\sqrt{p}$ in polynomial time/Solve DLP:  
-Compute all values of $g^{-x_2}$ for $x_2 \in \{0,1,2,3,4,5,\dots,m-1\}$
-Make a table for all values of $x_2$
-$\{a \cdot g^{-x_2}\} = \{\forall x_2\}$ (Length is p)
-$\{(g^m)^{x_1}\} = \{\forall x_1\}$ (Length is p)
-Sort the tables and go through each of them until
-$a \cdot g^{-x_2} = (g^m)^{x_1}$
-$x = x_1 + x_2$
+Compute all values of $g^{-x_2}$ for $x_2 \in \{0,1,2,3,4,5,\dots,m-1\}$  
+Make a table for all values of $x_2$  
+$\{a \cdot g^{-x_2}\} = \{\forall x_2\}$ (Length is p)  
+$\{(g^m)^{x_1}\} = \{\forall x_1\}$ (Length is p)  
+Sort the tables and go through each of them until  
+$a \cdot g^{-x_2} = (g^m)^{x_1}$  
+$x = x_1 + x_2$  
 Time taken: $\sqrt{p}$  
-Also known as the Meet-in-the-Middle Approach or [Baby-Step Giant-Step](https://colab.research.google.com/drive/1bGRV8OVXUC0II34-JJmrioFjNp7eEorl?usp=sharing)
+Also known as the Meet-in-the-Middle Approach or [Baby-Step Giant-Step](https://colab.research.google.com/drive/1bGRV8OVXUC0II34-JJmrioFjNp7eEorl?usp=sharing)  
 
 Index Calculus Method:  
-Time take: $2^{O(\sqrt{(log(N)log(log(N))})}$
-Step 1:
-Choose a set of small primes (E.g. {2,3,5,7})
+Time take: $2^{O(\sqrt{(log(N)log(log(N))})}$  
+Step 1:  
+Choose a set of small primes (E.g. {2,3,5,7})  
 
-Step 2  
-Calculate a table of $g^x \equiv p \pmod{N}$, where p can be completely factored by the set of small primes.
+Step 2:  
+Calculate a table of $g^x \equiv p \pmod{N}$, where p can be completely factored by the set of small primes.  
 
-Step 3  
-Build a system of equations:
+Step 3:  
+Build a system of equations:  
 Where p is factorable by our set of small primes  
-$g^{x_1} \equiv p_1$ => $x_1 = log_g(p_1)$
-$g^{x_2} \equiv p_2$ => $x_2 = log_g(p_2)$
-If $g^{x_3} \equiv p_3$ and $p_3 = p_a \cdot p_b$
-$x_3 = log_g(p_a) + log_g(p_b)$
+$g^{x_1} \equiv p_1$ => $x_1 = log_g(p_1)$  
+$g^{x_2} \equiv p_2$ => $x_2 = log_g(p_2)$  
+If $g^{x_3} \equiv p_3$ and $p_3 = p_a \cdot p_b$  
+$x_3 = log_g(p_a) + log_g(p_b)$  
 
-Step 4
-$x = a \cdot log_g(p_1) + b \cdot log_g(p_2)$
+Step 4:  
+$x = a \cdot log_g(p_1) + b \cdot log_g(p_2)$  
 Where a and b are the exponents of the primes used to express p  
-Example:
-Find x s.t  $5^x \equiv 8 \pmod{37}$
-$5^{11} \equiv 2$ => $11 = log_5(2)$
-$5^{22} \equiv 3$ => $22 = log_5(3)$
-$5^{k} \equiv 8$ => $k = 2log_5(2) + log_5(3)$ as $8 = 2^2 \cdot 3$
-$x = k = 2log_5(2) + log_5(3)$
+Example:  
+Find x s.t  $5^x \equiv 8 \pmod{37}$  
+$5^{11} \equiv 2$ => $11 = log_5(2)$  
+$5^{22} \equiv 3$ => $22 = log_5(3)$  
+$5^{k} \equiv 8$ => $k = 2log_5(2) + log_5(3)$ as $8 = 2^2 \cdot 3$  
+$x = k = 2log_5(2) + log_5(3)$  
 
-Solving the systems (ICM):
+Solving the systems (ICM):  
 Have 2 sets of equations with the same results that have the same prime base  
-Use simultaneous equations and inverses to calculate the direct $DLOG()$ of a prime base
-This can give you $log_g(p)$, $p\{2,3,5,7\dots\}$, p is in the set of small primes.
+Use simultaneous equations and inverses to calculate the direct $DLOG()$ of a prime base  
+This can give you $log_g(p)$, $p\{2,3,5,7\dots\}$, p is in the set of small primes.  
 
 ---
