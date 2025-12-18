@@ -57,7 +57,7 @@ It's the same thing as before, just that k is large enough that the convention h
 
 The reason that the probability of EVE not being able to find what the original m is, despite knowing G.E.D and the ciphertext, is that the $\varepsilon(k)$ runs in a limited time, so unless time is infinite, EVE will never be able to guarantee finding the original m.
 
-**Perfect Indistinguishability vs Computational Indistinguishability**
+**Perfect Indistinguishability vs Computational Indistinguishability**  
 Perfect indistinguishability cannot be cracked even with infinite time, while computational indistinguishability is crackable with infinite time; however, due to the time constraints and power of the adversary, they do not possess the time to crack this.
 
 Computational Indistinguishability (Many messages):  
