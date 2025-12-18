@@ -13,14 +13,14 @@ Hence, $P(C = c|M = m^{,}) = 0$, since $P(C = c) > 0$ hence, $P(C = c|M = m) > 0
 Since, $P(C = c|M = m^{,}) = 0 \neq P(C = c|M = m)$, this violates the Perfect Indistinguishability, which in turn violates Perfect Secrecy, hence, $|K| \geq |M|$
 (Proof by Contradiction)
 
-**Pros and Cons of the One-Time Pad**
-Pros: 
+**Pros and Cons of the One-Time Pad**  
+Pros:  
 According to Shannon’s Theorem, it is the best possible encryption algorithm
 
 Cons:  
 The size of the key is huge, as it is the same as the message bits (XOR)  
 The receiver needs to know which key goes with which ciphertext   
-(Perfect Indistinguishability) 
+(Perfect Indistinguishability)  
 
 Probabilistic Polynomial Time (PPT):  
 A PPT is the assumed algorithm that the adversary uses to “crack” the encryption system  
