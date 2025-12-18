@@ -56,44 +56,44 @@ $a^{-1} \pmod{p}$ only when $GCD(a$, $p) = 1$ (Use Euclid's Extended Algorithm)
 $a \cdot x + p \cdot y = GCD(a$, $p) = 1$, find x, $x = a^{-1}$  
 $a^b \pmod{n}$
 
-**Multiplicative Modular Math**
-$G = (Z_{N}^{\*} = \{1 \leq z < N|GCD(z, n) = 1\}, \times)$
-$|Z_{N}^{\*}| = \phi(n)$, $|Z_{8}^{\*}| = 4$, $|Z_{7}^{\*}| = 6$
-$|Z_{p}^{\*}| = p - 1$, for p prime
+**Multiplicative Modular Math**  
+$G = (Z_{N}^{\*} = \{1 \leq z < N|GCD(z, n) = 1\}, \times)$  
+$|Z_{N}^{\*}| = \phi(n)$, $|Z_{8}^{\*}| = 4$, $|Z_{7}^{\*}| = 6$  
+$|Z_{p}^{\*}| = p - 1$, for p prime  
 $\phi(p \cdot q) = (p - 1)(q - 1)$ where p and q are coprime  
 $|Z_{p_k}^{\*}| = p^{(k - 1)}(p - 1)$, for p prime (General Formula)  
 $\phi(p^k \cdot q^l) = \phi(p^k) \cdot \phi(q^l) = p^{(k-1)}(p-1) \cdot q^{(l-1)}(q-1)$ where p and q are coprime
 
 Cyclic:  
 $Z_p^{*}$, $Order(a)|(p - 1)$, $a^d = 1 \pmod{p}$  
-Let's say there is a set for all exponents d where $a^d = 1 \pmod{p}$
-If there is 1 value, a in the set, there are many values in the set where the set is
-$d_1 = \{1$, $a$, $a^2$, $a^3,\dots,a^{d-1}\}$
+Let's say there is a set for all exponents d where $a^d = 1 \pmod{p}$  
+If there is 1 value, a in the set, there are many values in the set where the set is  
+$d_1 = \{1$, $a$, $a^2$, $a^3,\dots,a^{d-1}\}$  
 
-Discrete Logarithm Problem (Formally)
-$G(Z_p^{*}$, $\times)$
+Discrete Logarithm Problem (Formally)  
+$G(Z_p^{*}$, $\times)$  
 A prime, p  
 A generator, $g \in G$  
-An element $h \in G$
-Find $x$ s.t
-$g^x \equiv h \pmod{p}$
+An element $h \in G$  
+Find $x$ s.t  
+$g^x \equiv h \pmod{p}$  
 
-**Prime Number Theorem**
-$n = \{1$, $2,\dots,n\}$
-$\frac{\#Number of n bit primes}{\#Number of n bit numbers} \approx \frac{1}{nln(2)}$
+**Prime Number Theorem**  
+$n = \{1$, $2,\dots,n\}$  
+$\frac{\#Number of n bit primes}{\#Number of n bit numbers} \approx \frac{1}{nln(2)}$  
 
-Primality Testing \[Agrawal-Kayal-Saxena (AKS) Algorithm\]
-Best for testing primes
+Primality Testing \[Agrawal-Kayal-Saxena (AKS) Algorithm\]  
+Best for testing primes  
 
-How to test if a number is a generator
-$\phi(n) = p - 1 = \prod q_1^{k_n}$
-$g^{\frac{\phi(n)}{q_i}} \pmod{n}$
-In simple terms, separate the totient of p into its prime factors, then check using the algorithm below, if none of the answer are 1, g is a generator
+How to test if a number is a generator  
+$\phi(n) = p - 1 = \prod q_1^{k_n}$  
+$g^{\frac{\phi(n)}{q_i}} \pmod{n}$  
+In simple terms, separate the totient of p into its prime factors, then check using the algorithm below, if none of the answer are 1, g is a generator  
 
-**Strong Primes**
-$p = \vartheta q + 1$, where q is prime,  is an integer
+**Strong Primes**  
+$p = \vartheta q + 1$, where q is prime,  is an integer  
 or  
-$p - 1 = \vartheta q$
+$p - 1 = \vartheta q$  
 In simple terms, this ensures that $p - 1$ is not a number that only consists of small factors, making it easy to find the $\phi(p)$. This helps to keep p is a safe prime, not vulnerable to totient formula attacks
 
 **Discrete Algorithm Problems**
