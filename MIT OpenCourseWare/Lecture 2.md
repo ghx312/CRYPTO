@@ -39,7 +39,7 @@ So, now instead of standardising Perfect Security, we only have to be secure to 
 Convention:
 We say that a function $p(k)$ is negligible if for every polynomial P, there exists a $k_0$ such that $k > k_0$, $\varepsilon(k) < \frac{1}{p(k)}$
 
-In simple terms, k is the security parameter, P is all possible polynomials, $\varepsilon(k)$ is the vulnerability function; as long as there is a k0 for all possible polynomials that $\varepsilon(k) < \frac{1}{p(k)}$, the system is secure. $k_0$ is like a point where all of $k > k_0$, all of k is secure.
+In simple terms, k is the security parameter, P is all possible polynomials, $\varepsilon(k)$ is the vulnerability function; as long as there is a $k_0$ for all possible polynomials that $\varepsilon(k) < \frac{1}{p(k)}$, the system is secure. $k_0$ is like a point where all of $k > k_0$, all of k is secure.
 This shows that the security increases exponentially relative to the vulnerability making it negligible.
 The opposite is true, where if there is one P where there are no $k_0$ (Point of change), k is no longer secure as now there is a $\varepsilon(k) > \frac{1}{p(k)}$. The vulnerability is now exponentially larger than the security.
 Any $k < k_0$, is not secure as it is not exponentially larger than the vulnerability function.
