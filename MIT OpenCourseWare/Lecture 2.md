@@ -102,7 +102,7 @@ $\exists$ PPT Algorithm A, such that $A(x) = f(x)$ $\forall x$
 
 **Hard to Invert**  
 $\forall$ PPT Algorithm Inverter, $\forall$ non-negligible $\varepsilon()$, $\exists k_0$, $\forall k > k_0$  
-$P($ Inverter $(1^k$, $f(x)) = x^{'}|f(x^{'}) = f(x)) < \varepsilon(k)$
+$P(Inverter(1^k$, $f(x)) = x^{'}|f(x^{'}) = f(x)) < \varepsilon(k)$
 
 In simple terms, there will always be a PPT algorithm that can easily calculate  
 f(x), for any x. However, the chances that the inverse PPT algorithm works (The Decryption System by Adversary) is less than the vulnerability, making it negligible for large enough k.
