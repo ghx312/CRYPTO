@@ -42,16 +42,16 @@ $DLOG_g(a) = t$, $1 \leq t \leq |G|$, s.t $a = g^t$
 $DLOG_g(a) = t$, $1 \leq t \leq |G|$, s.t $a = g \cdot t$  
 Basically, an algorithm that solves the discrete log
 
-Discrete Logarithm Problem (Informally)
-Given G, $g = a$, $a \in G$. Find $DLOG_g(a)$
+Discrete Logarithm Problem (Informally)  
+Given G, $g = a$, $a \in G$. Find $DLOG_g(a)$  
 Given ($Z_p$, $+$), where p is prime, find $DLOG_g(a)$  
 $g^t = a \pmod{p}$
 
 Easy Problems:  
 Can be solved in linear, quadratic, and cubic  
-$a + b \pmod{n}$
-$a \cdot b \pmod{n}$
-$GCD(a$, $b)$
+$a + b \pmod{n}$  
+$a \cdot b \pmod{n}$  
+$GCD(a$, $b)$  
 $a^{-1} \pmod{p}$ only when $GCD(a$, $p) = 1$ (Use Euclid's Extended Algorithm) $a \cdot x + p \cdot y = GCD(a$, $p) = 1$, find x, $x = a^{-1}$  
 $a^b \pmod{n}$
 
