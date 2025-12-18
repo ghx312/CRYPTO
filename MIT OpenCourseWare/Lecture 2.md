@@ -77,7 +77,7 @@ r represents a random state where it chooses a random ciphertext from the list o
 Semantic Security (SS):  
 $\forall$ PPT EVE, $\exists$ PPT EVE,  
 $\forall$ Polynomial time sampleable distribution M  
-$\forall$ functions f:M => {0,1}
+$\forall$ functions f:M => {0,1}  
 $\forall$ non-negligible functions: $\varepsilon > 0, \exists k_0$ such that k\>k0  
 $|P_M[EVE^{'}(1^k) = f(M)] - P_M[EVE(1^k$, $c) = f(M)|E(SK,$ $M) = c]| < \varepsilon(k)$
 
