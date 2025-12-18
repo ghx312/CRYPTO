@@ -80,7 +80,7 @@ $g^x \equiv h \pmod{p}$
 
 **Prime Number Theorem**  
 $n =$ { $1$, $2,\dots,n$ }  
-$\frac{\#Number of n bit primes}{\#Number of n bit numbers} \approx \frac{1}{nln(2)}$  
+$\frac{Number of n bit primes}{Number of n bit numbers} \approx \frac{1}{nln(2)}$  
 
 Primality Testing \[Agrawal-Kayal-Saxena (AKS) Algorithm\]  
 Best for testing primes  
