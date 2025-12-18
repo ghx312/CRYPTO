@@ -1,5 +1,3 @@
-“The truth is, sometimes things are obvious and not true, but the thing about security is, it's only interesting when things are not true” \- QOTL
-
 Shannon’s Key Length Theorem:
 Shannon’s Key Length Theorem states that the length of the key must be longer than or equal to the length of the message in order for an algorithm to achieve Perfect Secrecy, and that there are more or equal number of keys than messages.   
 km, KM
