@@ -46,10 +46,10 @@ Any $k < k_0$, is not secure as it is not exponentially larger than the vulnerab
 
 Computational Indistinguishability (IND):  
 Encryption system (G.E.D) satisfies computational indistinguishability if:  
-$\forall$ polynomial time sampleable message space M (Its just M)
-$\forall$ PPT algorithm EVE
+$\forall$ polynomial time sampleable message space M (Its just M)  
+$\forall$ PPT algorithm EVE  
 $\forall$ Non-negligible functions  $k_0$ such that all $k > k_0$  
-$P[EVE(m_1,$ $m_2$, $c) = b)] < \frac{1}{2} + \varepsilon(k)$
+$P[EVE(m_1,$ $m_2$, $c) = b] < \frac{1}{2} + \varepsilon(k)$
 
 In simple terms, if you pick $m_1$, $m_2$ , $E(SK$, $m_1) = c_1$ and $E(SK, m_2) = c_2$, you will not be able to tell if $c_1 = E(SK, m_1)$ or $c_1 = E(SK, m_2)$
 The probability that you, as a bystander, guess m from c correctly using EVE (Which is the PPT algorithm), is less than $\frac{1}{2} + \varepsilon(k)$ as there are 2 options, $m_1$, $m_2$, hence 50/50 for each option through blind guessing, plus the vulnerability exploited using $\varepsilon(k)$
