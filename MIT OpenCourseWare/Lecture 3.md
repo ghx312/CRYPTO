@@ -52,15 +52,16 @@ Can be solved in linear, quadratic, and cubic
 $a + b \pmod{n}$  
 $a \cdot b \pmod{n}$  
 $GCD(a$, $b)$  
-$a^{-1} \pmod{p}$ only when $GCD(a$, $p) = 1$ (Use Euclid's Extended Algorithm) $a \cdot x + p \cdot y = GCD(a$, $p) = 1$, find x, $x = a^{-1}$  
+$a^{-1} \pmod{p}$ only when $GCD(a$, $p) = 1$ (Use Euclid's Extended Algorithm)  
+$a \cdot x + p \cdot y = GCD(a$, $p) = 1$, find x, $x = a^{-1}$  
 $a^b \pmod{n}$
 
 **Multiplicative Modular Math**
-$G = (Z_{N}^{*} = \{1 \leq z < N|GCD(z, n) = 1\}, \times)$
-$|Z_{N}^{*}| = \phi(n)$, $|Z_{8}^{*}| = 4$, $|Z_{7}^{*}| = 6$
-$|Z_{p}^{*}| = p - 1$, for p prime
+$G = (Z_{N}^{\*} = \{1 \leq z < N|GCD(z, n) = 1\}, \times)$
+$|Z_{N}^{\*}| = \phi(n)$, $|Z_{8}^{\*}| = 4$, $|Z_{7}^{\*}| = 6$
+$|Z_{p}^{\*}| = p - 1$, for p prime
 $\phi(p \cdot q) = (p - 1)(q - 1)$ where p and q are coprime  
-$|Z_{p_k}^{*}| = p^{(k - 1)}(p - 1)$, for p prime (General Formula)  
+$|Z_{p_k}^{\*}| = p^{(k - 1)}(p - 1)$, for p prime (General Formula)  
 $\phi(p^k \cdot q^l) = \phi(p^k) \cdot \phi(q^l) = p^{(k-1)}(p-1) \cdot q^{(l-1)}(q-1)$ where p and q are coprime
 
 Cyclic:  
