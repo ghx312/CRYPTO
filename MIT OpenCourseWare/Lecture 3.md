@@ -16,7 +16,7 @@ Associative: It does not matter how the numbers in the groups are grouped in an 
 
 Commutative: The Order in which the input is sequenced does not matter as long as the inputs are the same. (E.g. 1 + 2 = 2 + 1)  
 
-$G$ ( $Z_N$, $Operation$), where $Order(G) = |G|$, where $|G| =$ Number of elements in $Z_N$  
+$G$($Z_N$, $Operation$), where $Order(G) = |G|$, where $|G| =$ Number of elements in $Z_N$  
 
 Legendre's Theorem:  
 All outputs are within the group (Basically mod N)  
