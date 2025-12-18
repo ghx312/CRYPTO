@@ -97,7 +97,7 @@ $p - 1 = \vartheta q$
 In simple terms, this ensures that $p - 1$ is not a number that only consists of small factors, making it easy to find the $\phi(p)$. This helps to keep p is a safe prime, not vulnerable to totient formula attacks
 
 **Discrete Algorithm Problems**  
-$F =$ { $F_{n^{'}}$ $D_{n^{'}}$ ${}_{n \in N}$  
+$F =$ { $F_{n^{'}}$ $D_{n^{'}}$ } $_{n \in N}$  
 $F_n =$ { $f:D_n$->$R_n$ } (A function that gives the corresponding output from the input)
 
 The goal
@@ -107,7 +107,7 @@ The goal
 $EXP_{p,g}(x) = g^x \pmod{p}$, where p is an n-bit prime, g is a generator of Zp\*  
 $D_n = \{0,1,2,\dots,p-2\}$ (Domain of D, or valid inputs of D)  
 $Z_{p}^{*} = R_n$ (Outputs of all valid inputs)  
-$len(D_n) = len(R_n)$ (There is a unique output for every valid input)
+$len(D_n) = len(R_n)$ (There is a unique output for every valid input)  
 
 In simple terms, there are a family of problems known as $F_n$, where there are $D_n$ inputs and $R_n$ outputs, and an example of one of the members of this family is $DLOG()$
 
