@@ -39,7 +39,7 @@ A group is cyclic if it has a generator
 
 **DLOG**  
 $DLOG_g(a) = t$, $1 \leq t \leq |G|$, s.t $a = g^t$  
-$DLOG_g(a) = t$, $1 \leq t \leq |G|$, s.t $a = g \cdot t$
+$DLOG_g(a) = t$, $1 \leq t \leq |G|$, s.t $a = g \cdot t$  
 Basically, an algorithm that solves the discrete log
 
 Discrete Logarithm Problem (Informally)
