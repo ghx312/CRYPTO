@@ -1,40 +1,40 @@
 Definitions:  
-Negligible Function: A function $f(k)$ is negligible if $\forall p(k)$, $\exists k_0$, $\forall k > k_0$, $f(k) < \frac{1}{p(k)}$ 
-OWF: $f:\{0,1\}^*$ => $\{0,1\}^*$, $\forall PPT A$, $P(A(f(x) = x^{'}|f(x^{'}) = f(x)) < \frac{1}{p(k)}$ 
-WOWF: $f:\{0,1\}^*$ => $\{0,1\}^{*}$, $\forall PPT A$, $P(A(f(x) = x^{'}|f(x^{'}) = f(x)) < 1 - \frac{1}{Q(k)}$
+Negligible Function: A function $f(k)$ is negligible if $\forall p(k)$, $\exists k_0$, $\forall k > k_0$, $f(k) < \frac{1}{p(k)}$  
+OWF: $f:\{0,1\}^*$ => $\{0,1\}^*$, $\forall PPT A$, $P(A(f(x) = x^{'}|f(x^{'}) = f(x)) < \frac{1}{p(k)}$  
+WOWF: $f:\{0,1\}^*$ => $\{0,1\}^{*}$, $\forall PPT A$, $P(A(f(x) = x^{'}|f(x^{'}) = f(x)) < 1 - \frac{1}{Q(k)}$  
 There will never be OWFs, only candidate OWFs.
 
-Groups Properties:
-Closure: $Z_N$ is a set of numbers, where a certain operation is applied to 2 random numbers in the group, the output falls in the group
+Groups Properties:  
+Closure: $Z_N$ is a set of numbers, where a certain operation is applied to 2 random numbers in the group, the output falls in the group  
 
-Identity: The number when the operation of the group is applied to all numbers, all outputs are the same as the input (Identity element) (Multiplicative Groups \= 1\) (Additive Groups \= 0\)
+Identity: The number when the operation of the group is applied to all numbers, all outputs are the same as the input (Identity element) (Multiplicative Groups \= 1\) (Additive Groups \= 0\)  
 
-Inverses: The number in the group has an inverse that, when the group’s operation is applied to both numbers, the answer is 0\. (Inverse element)
+Inverses: The number in the group has an inverse that, when the group’s operation is applied to both numbers, the answer is 0\. (Inverse element)  
 
-Associative: It does not matter how the numbers in the groups are grouped in an equation, as long as the sequence remains unchanged. ($A \oplus B$)$\oplus C = A \oplus$($B \oplus C$) (Associative)
+Associative: It does not matter how the numbers in the groups are grouped in an equation, as long as the sequence remains unchanged. ($A \oplus B$)$\oplus C = A \oplus$($B \oplus C$) (Associative)  
 
-Commutative: The Order in which the input is sequenced does not matter as long as the inputs are the same. (E.g. 1 + 2 = 2 + 1)
+Commutative: The Order in which the input is sequenced does not matter as long as the inputs are the same. (E.g. 1 + 2 = 2 + 1)  
 
-$G$($Z_N$, $Operation$), where $Order(G) = |G|$, where $|G| =$ Number of elements in $Z_N$
+$G$($Z_N$, $Operation$), where $Order(G) = |G|$, where $|G| =$ Number of elements in $Z_N$  
 
-Legendre's Theorem:
+Legendre's Theorem:  
 All outputs are within the group (Basically mod N)  
 $\forall a \in Z_N$ ,$a^{|G|} = e$ (e \= Multiplicative inverse)  
-$\forall a \in Z_N$, $a^{|G|} = e$ (e \= Addition inverse)
+$\forall a \in Z_N$, $a^{|G|} = e$ (e \= Addition inverse)  
 
 Order(a):  
 $Order(a)$ = $min\{i > 0|a^i = e\}$ (e \= Multiplicative Inverse)  
 If $Order(a) = |G|$, a is a generator  
-Or
-Euler’s Totient Function $\phi()$
+Or  
+Euler’s Totient Function $\phi()$  
 
-Generator:
+Generator:  
 $a \in G$, $\{a\} = \{a^1$, $a^2,\dots,a^{|G|}\}|\{a^1$, $a^2,\dots,a^{|G|}\} = Z_N$ (Multiplicative Groups)  
 $a \in G$, $\{a\} = \{a$, $2a$, $3a,\dots,a^{|G|}\}|\{a$, $2a$, $3a,\dots,a^{|G|}\} = Z_N$ (Additive Groups)  
 A generator is a number when raised to an increasing integer (For multiplicative groups) or added it itself (For additive groups), returns every element within the set.  
 {Primitive Roots}={Generators} Primitive Roots exist if the modulo is, 1, 2, 4, $p^k$, $2p^k$  
 $2p^k$ is for odd primes p  
-A group is cyclic if it has a generator
+A group is cyclic if it has a generator  
 
 **DLOG**  
 $DLOG_g(a) = t$, $1 \leq t \leq |G|$, s.t $a = g^t$  
