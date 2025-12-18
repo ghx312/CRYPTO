@@ -11,11 +11,12 @@ Identity: The number when the operation of the group is applied to all numbers, 
 
 Inverses: The number in the group has an inverse that, when the group’s operation is applied to both numbers, the answer is 0\. (Inverse element)  
 
-Associative: It does not matter how the numbers in the groups are grouped in an equation, as long as the sequence remains unchanged. ($A \oplus B$) $\oplus C = A \oplus$ ($B \oplus C$) (Associative)  
+Associative: It does not matter how the numbers in the groups are grouped in an equation, as long as the sequence remains unchanged.  
+($A \oplus B$) $\oplus C = A \oplus$ ($B \oplus C$) (Associative)  
 
 Commutative: The Order in which the input is sequenced does not matter as long as the inputs are the same. (E.g. 1 + 2 = 2 + 1)  
 
-$G$($Z_N$, $Operation$), where $Order(G) = |G|$, where $|G| =$ Number of elements in $Z_N$  
+$G$ ( $Z_N$, $Operation$), where $Order(G) = |G|$, where $|G| =$ Number of elements in $Z_N$  
 
 Legendre's Theorem:  
 All outputs are within the group (Basically mod N)  
