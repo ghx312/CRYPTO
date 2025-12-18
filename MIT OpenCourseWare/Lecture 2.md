@@ -75,7 +75,7 @@ $C_1 = E(s$, $m$, $r)$
 r represents a random state where it chooses a random ciphertext from the list of all possible ciphertexts. When the same plaintext is run with the same key, there must be an exponential list of ciphertexts that are not equal to each other, r then use the state that the chosen data was in to select a corresponding ciphertext. r must be from a data set with high entropy to prevent cryptoanalysis vulnerabilities.
 
 Semantic Security (SS):  
-$\forall$PPT EVE, $\exists$PPT EVE,  
+$\forall$ PPT EVE, $\exists$ PPT EVE,  
 $\forall$ Polynomial time sampleable distribution M  
 $\forall$ functions f:M => {0,1}
 $\forall$ non-negligible functions: $\varepsilon > 0, \exists k_0$ such that k\>k0  
