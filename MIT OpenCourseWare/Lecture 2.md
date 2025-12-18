@@ -89,15 +89,15 @@ The absolute values are there is show that the difference them, knowing the func
 
 In simple terms, the adversary gains no advantage in learning how the plaintext is created, with or without the ciphertext.
 
-**Computational Indistinguishability and Semantic Security**
-(G.E.D) satisfies Computational Indistinguishability only if it satisfies Semantic Security
+**Computational Indistinguishability and Semantic Security**  
+(G.E.D) satisfies Computational Indistinguishability only if it satisfies Semantic Security  
 
-**One-Way Functions (OWF)**
-One-Way Functions satisfy Computational Indistinguishability
-x => f(x) is trivial
-f(x) => x is a hard problem
+**One-Way Functions (OWF)**  
+One-Way Functions satisfy Computational Indistinguishability  
+x => f(x) is trivial  
+f(x) => x is a hard problem  
 
-**Easy to Evaluate**
+**Easy to Evaluate**  
 $\exists$PPT Algorithm A, such that $A(x) = f(x)$ $\forall x$
 
 **Hard to Invert**
